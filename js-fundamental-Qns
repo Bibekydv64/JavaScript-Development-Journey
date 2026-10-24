@@ -1,1 +1,42 @@
+let username = prompt('Enter a Email:');
+let password = prompt('Enter a Password:');
+
+
+if(username === 'bibek' && password === 'bibek@12')
+{
+  console.log('Welcome')
+}
+else
+{
+  console.log('nikal bete!')
+}
+
+
+Q4. ATM Withdrawal System 💳
+Task: User ko account balance ra withdrawal amount input liyera transaction validate gara.
+
+Requirements:
+1. prompt() bata account balance ra withdrawal amount lina.
+2. If withdrawal amount is less than or equal to 0, print "Invalid amount".
+3. If withdrawal amount is greater than balance, print "Insufficient balance".
+4. If withdrawal amount is less than or equal to balance and greater than 0, print "Withdrawal successful".
+5. Otherwise, appropriate message print gara.
+
+
+let balance = 3000
+
+let user_balance = Number(prompt('Enter a withdrowl balance:'))
+
+if(user_balance == 0)
+{
+  console.log('invalid number !')
+}
+else if (user_balance > balance)
+{
+  console.log('Chal nikal garib !')
+}
+else{
+  consle.log('Withdrowl sucessfully !')
+}
+
 
