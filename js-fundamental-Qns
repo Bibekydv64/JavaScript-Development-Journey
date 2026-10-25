@@ -337,4 +337,66 @@ console.log('Total Odd:',odd)
 
 
 
+// let input = prompt('Enter any Number:')
+// let total = 0
+// for(let num =1;num<=input;num++){
+//   total = total + num
+  
+// }
+// console.log('Total:',total)
+
+
+// let input = prompt('Enter any Nnumber:')
+// let even = 0
+// let odd = 0
+// for(let num =1;num <=input; num++){
+//   if(num % 2 == 0){
+//     // console.log('Even:',num)
+//     even = even + 1
+//   }
+//   else{
+//     // console.log('Odd:',num)
+//     odd = odd +1
+//   }
+// }
+// console.log('Total Even:',even)
+// console.log('Total Odd:',odd)
+
+
+
+
+
+
+
+
+// Q4 — Number Tracking: Even and Odd Digits
+// Task: Write a JavaScript program that accepts a number and counts how many digits are even and how many are odd.
+
+// Example:
+// - Input: 58321
+// - Even digits: 1
+// - Odd digits: 4
+
+let even =0
+let odd =0
+
+let user_input = prompt('Enter a Number:')
+for(let num= 1; num <= user_input; num++){
+  if(num % 2 == 0){
+    even = even +1
+  }
+  else{
+    odd = odd +1
+  }
+}
+console.log('Even digits:',even)
+console.log('odd digits:',odd)
+
+
+
+
+
+
+
+
 
