@@ -1,401 +1,349 @@
-let username = prompt('Enter a Email:');
-let password = prompt('Enter a Password:');
-
-
-if(username === 'bibek' && password === 'bibek@12')
-{
-  console.log('Welcome')
-}
-else
-{
-  console.log('nikal bete!')
-}
-
-
-Q4. ATM Withdrawal System 💳
-Task: User ko account balance ra withdrawal amount input liyera transaction validate gara.
-
-Requirements:
-1. prompt() bata account balance ra withdrawal amount lina.
-2. If withdrawal amount is less than or equal to 0, print "Invalid amount".
-3. If withdrawal amount is greater than balance, print "Insufficient balance".
-4. If withdrawal amount is less than or equal to balance and greater than 0, print "Withdrawal successful".
-5. Otherwise, appropriate message print gara.
-
-
-let balance = 3000
-
-let user_balance = Number(prompt('Enter a withdrowl balance:'))
-
-if(user_balance == 0)
-{
-  console.log('invalid number !')
-}
-else if (user_balance > balance)
-{
-  console.log('Chal nikal garib !')
-}
-else{
-  consle.log('Withdrowl sucessfully !')
-}
-
-
-// Q5. Exam Result Calculator 🎓
-// Task: Student ko marks input liyera grade calculate gara.
-
-// Requirements:
-// 1. prompt() bata marks input lina.
-// 2. Marks 0 bhanda kam wa 100 bhanda badhi bhaye "Invalid marks" print gara.
-// 3. Marks 80–100 → "Grade A"
-// 4. Marks 60–79 → "Grade B"
-// 5. Marks 40–59 → "Grade C"
-// 6. Marks 40 bhanda kam → "Fail"
-
-
-
-let user_input = prompt("Enter your marks:");
-
-let marks = Number(user_input);
-
-if (user_input === null || user_input.trim() === "" || isNaN(marks)) {
-    console.log("Invalid input");
-}
-else if (marks < 0 || marks > 100) {
-    console.log("Invalid marks");
-}
-else if (marks >= 80) {
-    console.log("Grade A");
-}
-else if (marks >= 60) {
-    console.log("Grade B");
-}
-else if (marks >= 40) {
-    console.log("Grade C");
-}
-else {
-    console.log("Fail");
-}
-
-
-
-
-
-// JavaScript — Q6: Electricity Bill Calculator ⚡
-// Task: User le consume gareko electricity units input linuhos ra total bill calculate garnuhos.
-
-// Requirements:
-// 1. prompt() bata electricity units input line.
-// 2. Units 0 bhanda kam bhaye "Invalid units" print garne.
-// 3. Units 0–100 samma: per unit Rs. 5.
-// 4. Units 101–200 samma: per unit Rs. 7.
-// 5. Units 200 bhanda mathi: per unit Rs. 10.
-// 6. Total bill console.log() bata print garne.
-
-let user_input = Number(prompt('Enter a Unit'))
-if(user_input < 0)
-{
-  console.log('invalid input !')
-}
-  
-else if(user_input > 0 && user_input < 100)
-{
-  console.log('Charges per Units RS:5')
-  let result = user_input * 5
-  console.log('Your Total RS:', result)
-}
-  
-else if(user_input > 101 && user_input < 200)
-{
-  console.log('Charges per Units RS:7')
-  console.log('Your total RS:', user_input * 7)
-}
-  
-else
-{
-  console.log('Charges per Units RS:10')
-  console.log('Your total Rs:', user_input * 10)
-}
-
-
-
-
-
-// Q7. 🛒 Shopping Discount Calculator
-// Task: Customer ko shopping amount anusar discount calculate gara.
-
-// Requirements:
-// 1. prompt() bata shopping amount input line.
-// 2. Amount Rs. 0 bhanda kam bhaye "Invalid amount" print gara.
-// 3. Amount Rs. 10,000 wa mathi bhaye 20% discount.
-// 4. Amount Rs. 5,000 dekhi Rs. 9,999.99 samma bhaye 10% discount.
-// 5. Amount Rs. 1,000 dekhi Rs. 4,999.99 samma bhaye 5% discount.
-// 6. Amount Rs. 1,000 bhanda kam bhaye no discount.
-// 7. Print these three values:
-//    - Original amount
-//    - Discount amount
-//    - Final amount after discount
-
-
-let user_input = prompt('Enter a amount:')
-user_input = Number(user_input)
-
-if(user_input < 0){
-  console.log('Invalid input!')
-}
-else if(user_input > 10000){
-  console.log('Congrats sir You Get 20% Discount')
-  let result = (20 * user_input) / 100
-  console.log('Your Bill:', result)
-  
-}
-else if(user_input > 5000 && user_input < 9999.99){
-  console.log('Congrats sir You Get 10% Discount')
-  let another_result = (10 * user_input) / 100
-  console.log('Your Bill:', another_result)
-}
-else if( user_input > 4999.99 && user_input < 1000 ){
-  console.log('Congrats sir You Get 5% Discount')
-  let another_results = (5 * user_input) / 100
-  console.log("your Bill:",another_results)
-}
-else{
-  console.log('Bete Discount Xaian  < 1000')
-}
-
-
-
-// Q5. Exam Result Calculator 🎓
-// Task: Student ko marks input liyera grade calculate gara.
-
-// Requirements:
-// 1. prompt() bata marks input lina.
-// 2. Marks 0 bhanda kam wa 100 bhanda badhi bhaye "Invalid marks" print gara.
-// 3. Marks 80–100 → "Grade A"
-// 4. Marks 60–79 → "Grade B"
-// 5. Marks 40–59 → "Grade C"
-// 6. Marks 40 bhanda kam → "Fail"
-
-
-
-let user_input = prompt("Enter your marks:");
-
-let marks = Number(user_input);
-
-if (user_input === null || user_input.trim() === "" || isNaN(marks)) {
-    console.log("Invalid input");
-}
-else if (marks < 0 || marks > 100) {
-    console.log("Invalid marks");
-}
-else if (marks >= 80) {
-    console.log("Grade A");
-}
-else if (marks >= 60) {
-    console.log("Grade B");
-}
-else if (marks >= 40) {
-    console.log("Grade C");
-}
-else {
-    console.log("Fail");
-}
-
-
-
-
-
-// JavaScript — Q6: Electricity Bill Calculator ⚡
-// Task: User le consume gareko electricity units input linuhos ra total bill calculate garnuhos.
-
-// Requirements:
-// 1. prompt() bata electricity units input line.
-// 2. Units 0 bhanda kam bhaye "Invalid units" print garne.
-// 3. Units 0–100 samma: per unit Rs. 5.
-// 4. Units 101–200 samma: per unit Rs. 7.
-// 5. Units 200 bhanda mathi: per unit Rs. 10.
-// 6. Total bill console.log() bata print garne.
-
-let user_input = Number(prompt('Enter a Unit'))
-if(user_input < 0)
-{
-  console.log('invalid input !')
-}
-  
-else if(user_input > 0 && user_input < 100)
-{
-  console.log('Charges per Units RS:5')
-  let result = user_input * 5
-  console.log('Your Total RS:', result)
-}
-  
-else if(user_input > 101 && user_input < 200)
-{
-  console.log('Charges per Units RS:7')
-  console.log('Your total RS:', user_input * 7)
-}
-  
-else
-{
-  console.log('Charges per Units RS:10')
-  console.log('Your total Rs:', user_input * 10)
-}
-
-
-
-
-
-// Q7. 🛒 Shopping Discount Calculator
-// Task: Customer ko shopping amount anusar discount calculate gara.
-
-// Requirements:
-// 1. prompt() bata shopping amount input line.
-// 2. Amount Rs. 0 bhanda kam bhaye "Invalid amount" print gara.
-// 3. Amount Rs. 10,000 wa mathi bhaye 20% discount.
-// 4. Amount Rs. 5,000 dekhi Rs. 9,999.99 samma bhaye 10% discount.
-// 5. Amount Rs. 1,000 dekhi Rs. 4,999.99 samma bhaye 5% discount.
-// 6. Amount Rs. 1,000 bhanda kam bhaye no discount.
-// 7. Print these three values:
-//    - Original amount
-//    - Discount amount
-//    - Final amount after discount
-
-
-let user_input = prompt('Enter a amount:')
-user_input = Number(user_input)
-
-if(user_input < 0){
-  console.log('Invalid input!')
-}
-else if(user_input > 10000){
-  console.log('Congrats sir You Get 20% Discount')
-  let result = (20 * user_input) / 100
-  console.log('Your Bill:', result)
-  
-}
-else if(user_input > 5000 && user_input < 9999.99){
-  console.log('Congrats sir You Get 10% Discount')
-  let another_result = (10 * user_input) / 100
-  console.log('Your Bill:', another_result)
-}
-else if( user_input > 4999.99 && user_input < 1000 ){
-  console.log('Congrats sir You Get 5% Discount')
-  let another_results = (5 * user_input) / 100
-  console.log("your Bill:",another_results)
-}
-else{
-  console.log('Bete Discount Xaian  < 1000')
-}
-
-
-
-
-
-
-
-
-for(let num=1; num <=5; ++num)
-{
-  console.log(num)
-}
-  
-
-
-
-Print numbers from 1 to 10.
-let input = prompt('Enter a Number')
-let total = 0
-for(let num = 1; num <= input; num++){
-  total = total+num 
-  
-}
-console.log('You Total Sum',total)
-
-
-QNQ2 — Count Even and Odd Numbers
-Bhai, now a little harder. 💻
-
-Task: Ask the user to enter a positive integer n. Using a for loop, count how many numbers from 1 to n are even and how many are odd.
-
-let input = prompt('Enter any Nnumber:')
-let even = 0
-let odd = 0
-for(let num =1;num <=input; num++){
-  if(num % 2 == 0){
-    // console.log('Even:',num)
-    even = even + 1
-  }
-  else{
-    // console.log('Odd:',num)
-    odd = odd +1
-  }
-}
-console.log('Total Even:',even)
-console.log('Total Odd:',odd)
-
-
-
-
-
-
-// let input = prompt('Enter any Number:')
-// let total = 0
-// for(let num =1;num<=input;num++){
-//   total = total + num
-  
-// }
-// console.log('Total:',total)
-
-
-// let input = prompt('Enter any Nnumber:')
-// let even = 0
-// let odd = 0
-// for(let num =1;num <=input; num++){
-//   if(num % 2 == 0){
-//     // console.log('Even:',num)
-//     even = even + 1
-//   }
-//   else{
-//     // console.log('Odd:',num)
-//     odd = odd +1
-//   }
-// }
-// console.log('Total Even:',even)
-// console.log('Total Odd:',odd)
-
-
-
-
-
-
-
-
-// Q4 — Number Tracking: Even and Odd Digits
-// Task: Write a JavaScript program that accepts a number and counts how many digits are even and how many are odd.
-
-// Example:
-// - Input: 58321
-// - Even digits: 1
-// - Odd digits: 4
-
-let even =0
-let odd =0
-
-let user_input = prompt('Enter a Number:')
-for(let num= 1; num <= user_input; num++){
-  if(num % 2 == 0){
-    even = even +1
-  }
-  else{
-    odd = odd +1
-  }
-}
-console.log('Even digits:',even)
-console.log('odd digits:',odd)
+JAVASCRIPT LOGIC-BUILDING PRACTICE
+Intermediate to Advanced Questions and CLI Projects
+Repository: javascript-learning-development-journey
+
+Purpose
+--------
+Build problem-solving skills through practice. Solve each task independently, test edge cases,
+and upload your own solutions to GitHub. These questions intentionally contain NO solutions.
+
+Suggested folder structure
+--------------------------
+javascript-learning-development-journey/
+  README.md
+  conditionals/
+  loops/
+  number-logic/
+  functions/
+  strings/
+  arrays/
+  cli-projects/
+
+General rules
+-------------
+1. Use clear variable names and consistent formatting.
+2. Validate user input where appropriate.
+3. Test normal, boundary, invalid, and unusual inputs.
+4. Do not use a shortcut when a question explicitly forbids it.
+5. For CLI projects, use Node.js and the terminal. Use prompt-sync or another input
+   package only if you have learned how to install and use packages; otherwise use a
+   simple Node-compatible input approach you understand.
+6. Commit work in small steps and write a short README for each project.
+
+============================================================
+SECTION A — CONDITIONALS AND DECISION LOGIC
+============================================================
+
+Q01. Electricity Bill Calculator
+Input units consumed. Calculate the bill using these slabs:
+- First 100 units: Rs. 5 per unit
+- Next 100 units: Rs. 7 per unit
+- Above 200 units: Rs. 10 per unit
+Calculate progressively, not by charging every unit at the highest slab. Handle zero and
+negative input sensibly.
+
+Q02. Shopping Discount Calculator
+Calculate discount based on purchase amount:
+- Below Rs. 1,000: no discount
+- Rs. 1,000 to Rs. 2,999.99: 5%
+- Rs. 3,000 to Rs. 4,999.99: 10%
+- Rs. 5,000 and above: 15%
+Display original amount, discount amount, and final amount. Test exact boundaries.
+
+Q03. ATM Withdrawal Validator
+Given account balance and withdrawal amount, reject invalid amounts, amounts not divisible
+by 100, insufficient balance, and withdrawals that would leave the balance below Rs. 500.
+Otherwise show the remaining balance.
+
+Q04. Grade and Result Analyzer
+Accept marks for five subjects. Reject marks outside 0–100. Calculate total and average,
+determine pass/fail based on a minimum 40 in every subject, and assign a grade using
+clearly documented grade boundaries.
+
+Q05. Leap Year Checker
+Determine whether a year is a leap year. Test century years and years divisible by 400.
+
+Q06. Triangle Classifier
+Given three side lengths, first determine whether they form a valid triangle. If valid,
+classify it as equilateral, isosceles, or scalene.
+
+Q07. Login Attempt System
+Store a sample username and password in variables. Allow at most three attempts. Give
+useful messages for incorrect username, incorrect password, and successful login.
+Do not reveal the real password in error messages.
+
+Q08. Date Validator
+Given day, month, and year, determine whether the date exists. Account for different month
+lengths and leap years.
+
+============================================================
+SECTION B — LOOPS AND COUNTERS
+============================================================
+
+Q09. Sum from 1 to N
+Ask for a positive integer N and calculate the sum from 1 through N using a loop.
+Do not use the arithmetic-series formula.
+
+Q10. Multiplication Table
+Print the multiplication table for a number from 1 through 12. Format the output clearly.
+
+Q11. Count Even and Odd Numbers
+For all integers from 1 through N, count how many are even and how many are odd.
+Validate N before starting.
+
+Q12. Factorial Calculator
+Calculate N! using a loop. Handle 0! correctly and reject negative or invalid input.
+Consider what happens when N is very large.
+
+Q13. Reverse a Number
+Reverse an integer mathematically using %, division, and Math.floor(). Do not convert
+the number to a string and do not use reverse() or split().
+
+Q14. Count Digits
+Count the digits in an integer without converting it to a string. Decide how your program
+will handle zero and negative numbers.
 
+Q15. Sum of Digits
+Calculate the sum of the digits of an integer using a loop and arithmetic operations.
 
+Q16. Count Even and Odd Digits
+For an input integer, count its even digits and odd digits. Example: 58321 contains two
+even digits (8 and 2) and three odd digits (5, 3, and 1).
 
+Q17. Product of Digits
+Calculate the product of all digits in an integer. Think carefully about how zero digits
+affect the result.
 
+Q18. Palindrome Number
+Determine whether an integer reads the same forward and backward. Solve without converting
+it to a string.
 
+Q19. Prime Number Checker
+Determine whether a number is prime. Reject values below 2 and avoid unnecessary checks.
+
+Q20. Print Prime Numbers
+Print all prime numbers between 1 and N. Keep the prime-checking logic understandable.
+
+Q21. Fibonacci Sequence
+Print the first N terms of the Fibonacci sequence. Test N values of 0, 1, and 2.
+
+Q22. Greatest Common Divisor
+Find the GCD of two integers using a loop. Try the Euclidean algorithm and explain why it
+works in your README.
+
+Q23. Least Common Multiple
+Find the LCM of two integers. Handle zero inputs and avoid needless repeated checks where
+possible.
+
+Q24. Armstrong Number
+Check whether a number equals the sum of its digits each raised to the power of the number
+of digits. Test more than just three-digit examples.
+
+Q25. Largest Digit
+Find the largest digit in an integer without converting it to a string and without using
+Math.max().
+
+Q26. Second-Largest Distinct Number
+Find the second-largest distinct value in an array without using sort(), sorted(), max(),
+or min(). Define what should happen if no second-largest distinct value exists.
+
+============================================================
+SECTION C — FUNCTIONS AND REUSABLE LOGIC
+============================================================
+
+Q27. Build a Calculator
+Create separate functions for addition, subtraction, multiplication, and division.
+Handle division by zero and invalid operations.
+
+Q28. Number Range Classifier
+Write a function that accepts a number and returns whether it is negative, zero, or positive.
+Test the function with multiple values.
+
+Q29. Reusable Grade Function
+Create a function that accepts marks and returns a grade. Keep input validation separate
+from grade calculation.
+
+Q30. Prime Function
+Write isPrime(number), returning a Boolean. Reuse it to print all primes in a range.
+
+Q31. Palindrome Function
+Write a function that checks whether a string is a palindrome. Decide whether spaces,
+punctuation, and letter case should be ignored, and document your choice.
+
+Q32. Recursive Factorial
+Calculate factorial using recursion. Explain the base case and test what happens when the
+base case is missing.
+
+Q33. Array Statistics
+Write functions to calculate sum, average, smallest value, and largest value without using
+built-in sum/min/max shortcuts. Decide how empty arrays should be handled.
+
+Q34. Password Strength Checker
+Write a function that checks length, uppercase, lowercase, digit, and special-character
+requirements. Return useful feedback rather than only true/false.
+
+============================================================
+SECTION D — STRINGS
+============================================================
+
+Q35. Reverse a String
+Reverse a string without using the built-in reverse() method. Compare a loop-based approach
+with an approach that uses an array.
+
+Q36. Character Frequency
+Count how many times each character occurs in a string. Decide how to treat uppercase and
+lowercase characters.
+
+Q37. Vowel and Consonant Counter
+Count vowels and consonants in a sentence. Ignore spaces, digits, and punctuation.
+
+Q38. Word Counter
+Count words in a sentence with extra spaces at the beginning, end, or between words.
+
+Q39. Anagram Checker
+Determine whether two strings are anagrams. Decide how spaces, punctuation, and case are
+handled and test your decision.
+
+Q40. First Non-Repeating Character
+Find the first character that appears only once. Define the result when every character repeats.
+
+Q41. Remove Duplicate Characters
+Remove repeated characters while preserving the first occurrence order. Example: banana
+becomes ban.
+
+Q42. Find the Longest Word
+Find the longest word in a sentence. Decide how punctuation should be treated and what to
+return for an empty sentence.
+
+============================================================
+SECTION E — ARRAYS AND DATA LOGIC
+============================================================
+
+Q43. Remove Duplicates
+Create a new array with duplicate values removed while preserving original order. First solve
+without Set, then compare your approach with Set.
+
+Q44. Frequency of Array Values
+Count the occurrences of each value in an array and display the frequency table.
+
+Q45. Rotate an Array
+Rotate an array to the right by K positions. Handle K larger than the array length and empty
+arrays.
+
+Q46. Move Zeros to the End
+Move every zero to the end while preserving the order of non-zero elements. Try to do this
+without creating a second array.
+
+Q47. Merge Two Sorted Arrays
+Merge two already-sorted arrays into one sorted array without calling sort().
+
+Q48. Missing Number
+An array contains distinct numbers from 1 through N with one number missing. Find the missing
+number and explain the time and space complexity of your approach.
+
+Q49. Two-Sum
+Given an array and a target, find two distinct elements whose sum equals the target. Return
+their indices or clearly state when no pair exists.
+
+Q50. Transaction Analyzer
+Given an array of transaction amounts, calculate total income, total expenses, net balance,
+largest transaction, and average transaction amount. Define how positive, negative, and zero
+amounts are interpreted.
+
+============================================================
+SECTION F — CLI PROJECTS (BUILD THESE AFTER THE QUESTIONS)
+============================================================
+
+PROJECT 1 — Student Management CLI
+Features:
+- Add a student with ID, name, and marks.
+- List all students.
+- Search by ID.
+- Update student details.
+- Delete a student.
+- Calculate each student's average and grade.
+- Prevent duplicate IDs and validate marks.
+- Show a menu until the user chooses Exit.
+Stretch goal: save and load data from a JSON file.
+
+PROJECT 2 — ATM Simulator
+Features:
+- PIN check with a limited number of attempts.
+- View balance.
+- Deposit money.
+- Withdraw money with balance and amount validation.
+- Show a transaction history.
+- Exit safely.
+Stretch goal: separate account logic into functions and maintain a transaction log.
+
+PROJECT 3 — Inventory and Billing System
+Features:
+- Add, update, search, and remove products.
+- Store product ID, name, price, and stock quantity.
+- Create a customer bill from selected products and quantities.
+- Prevent selling more items than are in stock.
+- Calculate subtotal, discount, and final amount.
+Stretch goal: low-stock warnings and JSON persistence.
+
+PROJECT 4 — Employee Payroll CLI
+Features:
+- Add and list employees.
+- Store employee ID, name, basic salary, and allowances.
+- Calculate gross salary and deductions using documented rules.
+- Search, update, and delete employee records.
+- Validate all numeric inputs.
+Stretch goal: monthly payroll summary and export to a text or JSON report.
+
+PROJECT 5 — Quiz Application
+Features:
+- Store questions and multiple-choice options.
+- Ask questions one by one.
+- Validate answers.
+- Track score and percentage.
+- Display correct answers after submission.
+- Allow replay.
+Stretch goal: shuffle questions and show a high-score table.
+
+PROJECT 6 — Personal Expense Tracker
+Features:
+- Add income and expense transactions.
+- Categorize transactions.
+- List transactions and filter by category.
+- Calculate total income, expenses, and balance.
+- Show the largest expense and spending by category.
+Stretch goal: monthly summaries and JSON persistence.
+
+PROJECT 7 — Contact Book
+Features:
+- Add, view, search, edit, and delete contacts.
+- Store name, phone, email, and optional address.
+- Search by partial name or phone number.
+- Validate required fields and prevent accidental duplicate contacts.
+Stretch goal: sort contacts alphabetically and save/load JSON data.
+
+============================================================
+GITHUB SUBMISSION CHECKLIST
+============================================================
+
+For every question:
+[ ] Create a separate .js file with a meaningful filename.
+[ ] Write the problem statement as a comment.
+[ ] Solve it independently.
+[ ] Test normal, boundary, and invalid inputs.
+[ ] Add a short note explaining the logic in your own words.
+[ ] Commit the solution to GitHub.
+
+For every CLI project:
+[ ] Write a README with purpose, features, run instructions, and example usage.
+[ ] Split the program into small functions.
+[ ] Validate user input.
+[ ] Test incorrect and unexpected inputs.
+[ ] Keep commits small and meaningful.
+[ ] Never upload passwords, API keys, or other secrets.
+
+Important:
+These are practice prompts, not reference solutions. If stuck, first write the steps in plain
+English, then trace the variables manually, and only then write JavaScript.
 
 
 
