@@ -389,4 +389,98 @@ console.log('odd digits:',odd)
 
 
 
+// // ===== SMART CALCULATOR =====
+// // 1. Addition
+// // 2. Subtraction
+// // 3. Multiplication
+// // 4. Division
+// // 5. Modulus
+// // 6. Exit
+// // Requirements:
+// // - Use do...while or while.
+// // - Use switch.
+// // - Use functions for calculations.
+// // - Handle division by zero.
+// // - Keep showing the menu until the user selects Exit.
+
+
+// let user_input = prompt(`================SMART CALCULATOR================
+//                 1. Addition Number
+//                 2. Subtractkion Number
+//                 3. Multipication
+//                 4. Division
+//                 5. Modulus
+//                 6. Exit
+//                 CHOSE ONE:
+//                           `)
+
+// if(user_input == '1' ){
+//   addition()
+// }
+// else if(user_input == '2'){
+//   subtraction()
+// }
+// else if(user_input == '3'){
+//   mul()
+// }
+// else if(user_input == '4'){
+//   division()
+// }
+// else if(user_input == '5'){
+//   mudulus()
+  
+// }
+// else if(user_input == '6'){
+//   console.log('Program Exit Sucesfully!')
+// }
+
+
+// function addition(){
+//   let number1 = Number(prompt('Enter a First Number:'))
+//   let number2 = Number(prompt('Enter a Second Number:'))
+
+//   let sum_total = `Your Addition Number: ${number1 + number2}`
+//   console.log(sum_total)
+
+// }
+
+// function subtraction(){
+//   let number1 = Number(prompt('Enter a First Number:'))
+//   let number2 = Number(prompt('ENter a First Number:'))
+
+//   let subtraction_total = `Your Subtraction Number: ${number1 - number2}`
+//   console.log(subtraction_total)
+// }
+
+// function mul(){
+//   let number1 = Number(prompt('Enter a First Number:'))
+//   let number2 = Number(prompt('Enter a Second Number:'))
+
+//   let mul_total = `Your multiplication Number:${number1 * number2}`
+//   console.log(mul_total)
+// }
+
+
+// function division(){
+//   let number1 = Number(prompt('Enter a First Number:'))
+//   let number2 = Number(prompt('Enter a Second Number:'))
+
+//   let division_total = `Your division Number:${number1 / number2}`
+//   console.log(division_total)
+  
+// }
+
+// function mudulus(){
+//   let number1 = Number(prompt('Enter a First Number:'))
+//   let number2 = Number(prompt('Enter a Second Number:'))
+
+//   let division_total = `Your module Number:${number1 % number2}`
+//   console.log(division_total)
+  
+// }
+
+
+
+
+
 
