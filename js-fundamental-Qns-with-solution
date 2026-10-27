@@ -12,6 +12,28 @@ else
 }
 
 
+
+Q8. Separate even and odd numbers
+---------------------------------
+Task:
+Return an object containing even and odd arrays.
+
+Solution:
+function groupByParity(numbers) {
+    const result = { even: [], odd: [] };
+
+    for (const number of numbers) {
+        if (number % 2 === 0) result.even.push(number);
+        else result.odd.push(number);
+    }
+
+    return result;
+}
+
+console.log(groupByParity([1, 2, 3, 4, 5, 6]));
+// { even: [2, 4, 6], odd: [1, 3, 5] }
+
+
 Q4. ATM Withdrawal System 💳
 Task: User ko account balance ra withdrawal amount input liyera transaction validate gara.
 
