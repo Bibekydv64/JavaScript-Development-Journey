@@ -586,7 +586,203 @@ function modulus() {
 
     console.log(`Modulus result: ${number1 % number2}`);
 }
-```
+
+
+Q1. Find the second-largest DISTINCT number
+-------------------------------------------
+Task:
+Given an array, return the second-largest distinct number without using sort(), Math.max(), or Math.min().
+
+Example:
+Input: [10, 5, 8, 10, 7]
+Output: 8
+
+Solution:
+function secondLargest(numbers) {
+    let largest = -Infinity;
+    let second = -Infinity;
+
+    for (const number of numbers) {
+        if (number > largest) {
+            second = largest;
+            largest = number;
+        } else if (number < largest && number > second) {
+            second = number;
+        }
+    }
+
+    return second === -Infinity ? null : second;
+}
+
+console.log(secondLargest([10, 5, 8, 10, 7])); // 8
+console.log(secondLargest([4, 4]));             // null
+
+Why it works:
+- `largest` tracks the largest value found so far.
+- `second` tracks the best distinct value below `largest`.
+- A duplicate of `largest` does not become the second-largest distinct value.
+
+Q2. Count even and odd digits
+-----------------------------
+Task:
+Count even and odd digits in a positive integer.
+
+Example:
+Input: 58321
+Output: Even: 1, Odd: 4
+
+Solution:
+function countEvenOddDigits(number) {
+    number = Math.abs(Math.trunc(number));
+
+    let even = 0;
+    let odd = 0;
+
+    if (number === 0) return { even: 1, odd: 0 };
+
+    while (number > 0) {
+        const digit = number % 10;
+
+        if (digit % 2 === 0) {
+            even++;
+        } else {
+            odd++;
+        }
+
+        number = Math.floor(number / 10);
+    }
+
+    return { even, odd };
+}
+
+console.log(countEvenOddDigits(58321)); // { even: 1, odd: 4 }
+
+Q3. Check whether two strings are anagrams
+------------------------------------------
+Task:
+Two strings are anagrams if they contain the same characters with the same counts.
+Ignore spaces and letter case.
+
+Example:
+Input: "Dormitory", "Dirty room"
+Output: true
+
+Solution:
+function areAnagrams(first, second) {
+    const normalize = text =>
+        text.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+    const a = normalize(first);
+    const b = normalize(second);
+
+    if (a.length !== b.length) return false;
+
+    const counts = {};
+
+    for (const char of a) {
+        counts[char] = (counts[char] || 0) + 1;
+    }
+
+    for (const char of b) {
+        if (!counts[char]) return false;
+        counts[char]--;
+    }
+
+    return true;
+}
+
+console.log(areAnagrams("Dormitory", "Dirty room")); // true
+console.log(areAnagrams("hello", "world"));          // false
+
+Q4. Remove duplicates without Set
+---------------------------------
+Task:
+Return a new array containing each value only once, preserving its first appearance.
+
+Solution:
+function removeDuplicates(items) {
+    const result = [];
+
+    for (const item of items) {
+        if (!result.includes(item)) {
+            result.push(item);
+        }
+    }
+
+    return result;
+}
+
+console.log(removeDuplicates([2, 4, 2, 5, 4, 7])); // [2, 4, 5, 7]
+
+Q5. Count the frequency of each value
+-------------------------------------
+Task:
+Count how many times each value occurs.
+
+Solution:
+function frequencyCounter(items) {
+    const frequency = {};
+
+    for (const item of items) {
+        frequency[item] = (frequency[item] || 0) + 1;
+    }
+
+    return frequency;
+}
+
+console.log(frequencyCounter(["js", "py", "js", "c", "py", "js"]));
+// { js: 3, py: 2, c: 1 }
+
+Q6. Check whether a string is a palindrome
+------------------------------------------
+Task:
+Ignore spaces, punctuation, and case.
+
+Solution:
+function isPalindrome(value) {
+    const cleaned = value.toLowerCase().replace(/[^a-z0-9]/g, "");
+    return cleaned === cleaned.split("").reverse().join("");
+}
+
+console.log(isPalindrome("Never odd or even")); // true
+console.log(isPalindrome("JavaScript"));        // false
+
+Q7. Rotate an array to the right by k positions
+-----------------------------------------------
+Example:
+Input: [1, 2, 3, 4, 5], k = 2
+Output: [4, 5, 1, 2, 3]
+
+Solution:
+function rotateRight(items, k) {
+    if (items.length === 0) return [];
+
+    k = ((k % items.length) + items.length) % items.length;
+    return items.slice(-k).concat(items.slice(0, items.length - k));
+}
+
+console.log(rotateRight([1, 2, 3, 4, 5], 2)); // [4, 5, 1, 2, 3]
+
+Q8. Separate even and odd numbers
+---------------------------------
+Task:
+Return an object containing even and odd arrays.
+
+Solution:
+function groupByParity(numbers) {
+    const result = { even: [], odd: [] };
+
+    for (const number of numbers) {
+        if (number % 2 === 0) result.even.push(number);
+        else result.odd.push(number);
+    }
+
+    return result;
+}
+
+console.log(groupByParity([1, 2, 3, 4, 5, 6]));
+// { even: [2, 4, 6], odd: [1, 3, 5] }
+
 
 
 
