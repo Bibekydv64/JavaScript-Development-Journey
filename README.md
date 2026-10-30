@@ -21,8 +21,7 @@ This repository documents my journey from JavaScript fundamentals to advanced pr
 9. **Asynchronous JavaScript** — Promises, async/await, error handling, and the event loop.
 10. **APIs and Data Handling** — Fetch API, JSON, HTTP requests, and external data integration.
 11. **Mini-Projects** — Calculator, grade calculator, quiz application, to-do list, and expense tracker.
-12. **Advanced Projects** — Weather application, GitHub profile finder, interactive dashboard, and API-driven applications.
-13. **Portfolio and Code Quality** — Debugging, testing, documentation, Git, and project improvement.
+
 
 ### Technologies
 
@@ -32,7 +31,6 @@ This repository documents my journey from JavaScript fundamentals to advanced pr
 - DOM API
 - Fetch API and JSON
 - Browser Developer Tools
-- Git and GitHub
 
 ### Goals
 
