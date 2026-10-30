@@ -1,1 +1,104 @@
+// ===== SMART CALCULATOR =====
+
+let user_input;
+
+do {
+    user_input = prompt(`
+========== SMART CALCULATOR ==========
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulus
+6. Exit
+
+Choose one:
+`);
+
+    if (user_input === null) {
+        console.log("Program cancelled.");
+        break;
+    }
+
+    switch (user_input.trim()) {
+
+        case "1":
+            addition();
+            break;
+
+        case "2":
+            subtraction();
+            break;
+
+        case "3":
+            multiplication();
+            break;
+
+        case "4":
+            division();
+            break;
+
+        case "5":
+            modulus();
+            break;
+
+        case "6":
+            console.log("Program exited successfully!");
+            break;
+
+        default:
+            console.log("Invalid choice! Please select 1-6.");
+    }
+
+} while (user_input.trim() !== "6" && user_input !== null);
+
+
+// ===== CALCULATION FUNCTIONS =====
+
+function getNumbers() {
+    let number1 = Number(prompt("Enter the first number:"));
+    let number2 = Number(prompt("Enter the second number:"));
+
+    return [number1, number2];
+}
+
+function addition() {
+    let [number1, number2] = getNumbers();
+
+    console.log(`Addition result: ${number1 + number2}`);
+}
+
+function subtraction() {
+    let [number1, number2] = getNumbers();
+
+    console.log(`Subtraction result: ${number1 - number2}`);
+}
+
+function multiplication() {
+    let [number1, number2] = getNumbers();
+
+    console.log(`Multiplication result: ${number1 * number2}`);
+}
+
+function division() {
+    let [number1, number2] = getNumbers();
+
+    if (number2 === 0) {
+        console.log("Error: Cannot divide by zero!");
+        return;
+    }
+
+    console.log(`Division result: ${number1 / number2}`);
+}
+
+function modulus() {
+    let [number1, number2] = getNumbers();
+
+    if (number2 === 0) {
+        console.log("Error: Cannot calculate modulus with zero!");
+        return;
+    }
+
+    console.log(`Modulus result: ${number1 % number2}`);
+}
 
