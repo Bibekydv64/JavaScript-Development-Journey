@@ -222,12 +222,6 @@ function division(){
 Q28. Number Range Classifier
 Write a function that accepts a number and returns whether it is negative, zero, or positive.
 Test the function with multiple values.
-// Q28. Number Range Classifier
-// Write a function that accepts a number and returns whether it is negative, zero, or positive.
-// Test the function with multiple values.
-
-
-
 
 
 function Number_classfier(parameter)
@@ -264,8 +258,34 @@ Q29. Reusable Grade Function
 Create a function that accepts marks and returns a grade. Keep input validation separate
 from grade calculation.
 
+function grade(){
+  grade_input = prompt('Enter a grade marks:')
+
+  if(grade_input >= 80 && grade_input <= 100){
+    console.log(`A+ Grade${grade_input}`)
+  }
+  else if(grade_input >=70 && grade_input <= 79){
+    console.log(`A Grade${grade_input}`)
+  }
+  else if(grade_input >=60 && grade_input <= 69){
+    console.log(`B+ Grade${grade_input}`)
+  }
+  else if(grade_input >=40 && grade_input <= 59){
+    console.log(`Low Grade${grade_input}`)
+  }
+  else{
+    console.log('Nalayek Fail xe ')
+  } 
+}
+
+
+grade()
+
+
+
 Q30. Prime Function
 Write isPrime(number), returning a Boolean. Reuse it to print all primes in a range.
+
 
 Q31. Palindrome Function
 Write a function that checks whether a string is a palindrome. Decide whether spaces,
