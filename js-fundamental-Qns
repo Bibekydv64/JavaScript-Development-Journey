@@ -222,6 +222,43 @@ function division(){
 Q28. Number Range Classifier
 Write a function that accepts a number and returns whether it is negative, zero, or positive.
 Test the function with multiple values.
+// Q28. Number Range Classifier
+// Write a function that accepts a number and returns whether it is negative, zero, or positive.
+// Test the function with multiple values.
+
+
+
+
+
+function Number_classfier(parameter)
+{
+  if(parameter == Number(parameter))
+  {
+    if(paramerter == 0)
+    {
+      console.log(`this is ${parameter} Number`)
+    }
+    else if(parameter >0)
+    {
+      console.log(`this is V+:${parameter} Number`)
+    }
+    else if(parameter <0)
+    {
+      console.log(`this is V-:${parameter} Number`)
+    }
+    else{
+      console.log('invalid Error')
+    }
+    
+  else{
+    console.log('only Number Exit not another keyword!')
+  }
+}
+
+Number_classfier(12)
+
+
+
 
 Q29. Reusable Grade Function
 Create a function that accepts marks and returns a grade. Keep input validation separate
