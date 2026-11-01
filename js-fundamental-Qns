@@ -282,15 +282,6 @@ function grade(){
 grade()
 
 
-
-Q30. Prime Function
-Write isPrime(number), returning a Boolean. Reuse it to print all primes in a range.
-
-
-Q31. Palindrome Function
-Write a function that checks whether a string is a palindrome. Decide whether spaces,
-punctuation, and letter case should be ignored, and document your choice.
-
 Q32. Recursive Factorial
 Calculate factorial using recursion. Explain the base case and test what happens when the
 base case is missing.
