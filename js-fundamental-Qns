@@ -33,35 +33,81 @@ General rules
 ============================================================
 SECTION A — CONDITIONALS AND DECISION LOGIC
 ============================================================
+// Q01. Electricity Bill Calculator
+// Input units consumed. Calculate the bill using these slabs:
+// - First 100 units: Rs. 5 per unit
+// - Next 100 units: Rs. 7 per unit
+// - Above 200 units: Rs. 10 per unit
+// Calculate progressively, not by charging every unit at the highest slab. Handle zero and
+// negative input sensibly.
 
-Q01. Electricity Bill Calculator
-Input units consumed. Calculate the bill using these slabs:
-- First 100 units: Rs. 5 per unit
-- Next 100 units: Rs. 7 per unit
-- Above 200 units: Rs. 10 per unit
-Calculate progressively, not by charging every unit at the highest slab. Handle zero and
-negative input sensibly.
 
-Q02. Shopping Discount Calculator
-Calculate discount based on purchase amount:
-- Below Rs. 1,000: no discount
-- Rs. 1,000 to Rs. 2,999.99: 5%
-- Rs. 3,000 to Rs. 4,999.99: 10%
-- Rs. 5,000 and above: 15%
-Display original amount, discount amount, and final amount. Test exact boundaries.
 
-Q03. ATM Withdrawal Validator
-Given account balance and withdrawal amount, reject invalid amounts, amounts not divisible
-by 100, insufficient balance, and withdrawals that would leave the balance below Rs. 500.
-Otherwise show the remaining balance.
+// let user_input = Number(prompt('Enter a Unit Number:'))
+
+// if(user_input < 0){
+//   console.log('Invalid Input!')
+// }
+// else if(user_input > 0 && user_input <= 100 ){
+//   console.log('Charged Units Rs:5')
+//   let total = user_input * 5
+//   console.log(`total Amount:${total}`)
+// }
+// else if(user_input > 101  && user_input <= 200) {
+//   console.log('Charged Units Rs:7')
+//   let total2 = user_input * 7
+//   console.log(`total Amount:${total2}`)
+// }
+// else{
+//   console.log('Charged Units Rs:10')
+//   let total3 = user_input * 10
+//   console.log(`total Amount:${total3}`)
+// }
+
+
+
+
+// Q02. Shopping Discount Calculator
+// Calculate discount based on purchase amount:
+// - Below Rs. 1,000: no discount
+// - Rs. 1,000 to Rs. 2,999.99: 5%
+// - Rs. 3,000 to Rs. 4,999.99: 10%
+// - Rs. 5,000 and above: 15%
+// Display original amount, discount amount, and final amount. Test exact boundaries.
+
+// amount_input = Number(prompt('Enter a amount:'))
+
+// if(amount_input < 0){
+//   console.log('Invalid Input!')
+// }
+// else if(amount_input >= 1  && amount_input <= 1000){
+//   console.log(`Your amount:${amount_input}`)
+// }
+// else if(amount_input >= 1001  && amount_input <= 3000){
+//   console.log('Congrats Sir You get 5% Discount')
+//   let total = (amount_input /5) * 100
+//   console.log(`Your discount amount:${total}`)
+//   console.log(`Your Orginal amount${amount_input}`)
+// }
+// else if(amount_input >= 3001  && amount_input <= 5000){
+//   console.log('Congrats Sir You get 10% Discount')
+//   let total1 = (amount_input /10) * 100
+//   console.log(`Your discount amount:${total1}`)
+//   console.log(`Your Orginal amount${amount_input}`)
+// }
+// else{
+//   console.log('Congrats Sir You get 15% Discount')
+//   let total2 = (amount_input /15) * 100
+//   console.log(`Your discount amount:${total2}`)
+//   console.log(`Your Orginal amount${amount_input}`)
+// }
+
 
 Q04. Grade and Result Analyzer
 Accept marks for five subjects. Reject marks outside 0–100. Calculate total and average,
 determine pass/fail based on a minimum 40 in every subject, and assign a grade using
 clearly documented grade boundaries.
 
-Q05. Leap Year Checker
-Determine whether a year is a leap year. Test century years and years divisible by 400.
 
 Q06. Triangle Classifier
 Given three side lengths, first determine whether they form a valid triangle. If valid,
