@@ -102,25 +102,98 @@ SECTION A — CONDITIONALS AND DECISION LOGIC
 //   console.log(`Your Orginal amount${amount_input}`)
 // }
 
+// Q04. Grade and Result Analyzer
+// Accept marks for five subjects. Reject marks outside 0–100. Calculate total and average,
+// determine pass/fail based on a minimum 40 in every subject, and assign a grade using
+// clearly documented grade boundaries.
 
-Q04. Grade and Result Analyzer
-Accept marks for five subjects. Reject marks outside 0–100. Calculate total and average,
-determine pass/fail based on a minimum 40 in every subject, and assign a grade using
-clearly documented grade boundaries.
+// marks_obj = []
+
+// for(let num =1; num <=5; num++){
+//   user_marks= Number(prompt('Enter a marks:'))
+//   if(user_marks == Number(user_marks) && user_marks <= 100){
+//     marks_obj.push(user_marks)
+//   }
+//   else{
+//     console.log('invalid Input ! try again')
+//     break
+//   } 
+// }
+// // console.log(marks_obj)
+// let marks_total = 0
+
+// for(let cal of marks_obj){
+//   if(cal >= 40){
+//     marks_total = marks_total + cal
+//     console.log(`Passed Subjects Mark:${cal}`)
+//   }
+//   else{
+//     console.log(`Failed Subjects Mark:${cal}`)
+//   }
+// }
+// let avg_marks = marks_total / marks_obj.length
+// console.log(`avg marks of ${marks_obj.length}Subjects:${avg_marks}`)
 
 
-Q06. Triangle Classifier
-Given three side lengths, first determine whether they form a valid triangle. If valid,
-classify it as equilateral, isosceles, or scalene.
 
-Q07. Login Attempt System
-Store a sample username and password in variables. Allow at most three attempts. Give
-useful messages for incorrect username, incorrect password, and successful login.
-Do not reveal the real password in error messages.
 
-Q08. Date Validator
-Given day, month, and year, determine whether the date exists. Account for different month
-lengths and leap years.
+
+
+// Q07. Login Attempt System
+// Store a sample username and password in variables. Allow at most three attempts. Give
+// useful messages for incorrect username, incorrect password, and successful login.
+// Do not reveal the real password in error messages.
+
+// counter = 0
+
+// function login(){
+//   username = prompt('Enter Username and Number:')
+//   password = prompt('Enter password:')
+
+//   if(username == 'bibek' || username == '9819886095'){
+//     if(password == 'bibek@12' && password.length >= 5){
+//       console.log('Login Sucessfully')
+//     }
+//     else{
+//       counter = counter+1
+//       password = prompt('Enter password:')
+//       if(password == 'bibek@12' && password.length >= 5){
+//       console.log('Login Sucessfully')
+//       }
+//       else{
+//       counter = counter+1
+//       password = prompt('Enter password:')
+//       if(password == 'bibek@12' && password.length >= 5){
+//       console.log('Login Sucessfully')
+//       }
+//       else{
+//       counter = counter+1
+//       password = prompt('Enter password:')
+//       if(password == 'bibek@12' && password.length >= 5){
+//       console.log('Login Sucessfully')
+//       }
+//       else{
+//       if (counter <= 3){
+//       console.log('Try Again after 5 mins 3 attempt failed')
+//         }
+//       }
+//       }
+      
+//       console.log('Invalid password!')
+//     }
+//   }
+// }
+
+
+
+
+// Q08. Date Validator
+// Given day, month, and year, determine whether the date exists. Account for different month
+// lengths and leap years.
+
+
+
+
 
 ============================================================
 SECTION B — LOOPS AND COUNTERS
