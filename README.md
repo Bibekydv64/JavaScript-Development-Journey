@@ -42,18 +42,6 @@ This repository documents my journey from JavaScript fundamentals to advanced pr
 - Build practical projects for my development portfolio.
 - Prepare for frontend development and full-stack integration with Flask.
 
-### Repository Structure
-
-- `01-fundamentals/` — Variables, data types, and operators.
-- `02-conditions/` — If-else and decision-making exercises.
-- `03-loops/` — Iteration and problem-solving challenges.
-- `04-functions/` — Reusable functions and scope.
-- `05-arrays-and-objects/` — Data structures and array methods.
-- `06-dom-and-events/` — Browser interaction and form handling.
-- `07-modern-javascript/` — ES6+ features and modules.
-- `08-async-and-apis/` — Asynchronous programming and API requests.
-- `09-mini-projects/` — Small practical applications.
-- `10-advanced-projects/` — Larger, integrated applications.
 
 ### Progress
 
