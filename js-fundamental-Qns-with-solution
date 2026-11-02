@@ -1042,6 +1042,76 @@ console.log(bibek)
 
 
 
+# import random
+# import math
+
+# print(sales)
+
+# print(sales.sample(10))
+
+
+# print(math.floor(random.random()*9999 + 1000+1))
+
+
+
+# print(sales[(sales['Total'] > 50) & (sales['Total'] < 60)])
+
+
+
+# name = 'bibek kr'
+
+# print(name.replace('kr','dr'))
+
+
+# name = 'bibek,suraj,parash,satya,nabin'
+
+# print(name.split(','))
+
+
+
+# from datetime import datetime
+
+
+# date = datetime.now()
+
+# print(date)
+
+
+
+# import requests
+
+# print(requests.)
+
+# import array as arr
+
+# list = [1,17,3,15,34,86,23,35,65,12,32]
+
+
+
+# lists =  arr.array('b',[1,2,3,4,56,23,24])
+# print(lists)
+
+
+# data = {
+#     "price": 100,
+#     "quantity": 5
+# }
+
+# data["price"] = 200
+
+# print(data)
+
+
+# dict = {
+#     'name':'bibek',
+#     'age':23,
+    
+# }
+
+# print(dict)
+
+
+
 
 
 
