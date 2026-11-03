@@ -328,91 +328,103 @@ grade()
 
 
 
+// ============================================================
+// SECTION B — LOOPS AND COUNTERS
+// ============================================================
 
-============================================================
-SECTION B — LOOPS AND COUNTERS
-============================================================
+// Q09. Sum from 1 to N
+// Ask for a positive integer N and calculate the sum from 1 through N using a loop.
+// Do not use the arithmetic-series formula.
 
-Q09. Sum from 1 to N
-Ask for a positive integer N and calculate the sum from 1 through N using a loop.
-Do not use the arithmetic-series formula.
+// let number_counter = 0
 
-Q10. Multiplication Table
-Print the multiplication table for a number from 1 through 12. Format the output clearly.
+// let user_input = Number(prompt('Enter  n number:'))
 
-Q11. Count Even and Odd Numbers
-For all integers from 1 through N, count how many are even and how many are odd.
-Validate N before starting.
+//   for(let num =1; num <= user_input; num++){
+//     let user_number = Number(prompt('Enter number:'))
+//   if(user_number > 0){
+//     number_counter += num
+//   }
+//   else{
+//     continue
+//   }
+// }
 
-Q12. Factorial Calculator
-Calculate N! using a loop. Handle 0! correctly and reject negative or invalid input.
-Consider what happens when N is very large.
-
-Q13. Reverse a Number
-Reverse an integer mathematically using %, division, and Math.floor(). Do not convert
-the number to a string and do not use reverse() or split().
-
-Q14. Count Digits
-Count the digits in an integer without converting it to a string. Decide how your program
-will handle zero and negative numbers.
-
-Q15. Sum of Digits
-Calculate the sum of the digits of an integer using a loop and arithmetic operations.
-
-Q16. Count Even and Odd Digits
-For an input integer, count its even digits and odd digits. Example: 58321 contains two
-even digits (8 and 2) and three odd digits (5, 3, and 1).
-
-Q17. Product of Digits
-Calculate the product of all digits in an integer. Think carefully about how zero digits
-affect the result.
-
-Q18. Palindrome Number
-Determine whether an integer reads the same forward and backward. Solve without converting
-it to a string.
-
-Q19. Prime Number Checker
-Determine whether a number is prime. Reject values below 2 and avoid unnecessary checks.
-
-Q20. Print Prime Numbers
-Print all prime numbers between 1 and N. Keep the prime-checking logic understandable.
-
-Q21. Fibonacci Sequence
-Print the first N terms of the Fibonacci sequence. Test N values of 0, 1, and 2.
-
-Q22. Greatest Common Divisor
-Find the GCD of two integers using a loop. Try the Euclidean algorithm and explain why it
-works in your README.
-
-Q23. Least Common Multiple
-Find the LCM of two integers. Handle zero inputs and avoid needless repeated checks where
-possible.
-
-Q24. Armstrong Number
-Check whether a number equals the sum of its digits each raised to the power of the number
-of digits. Test more than just three-digit examples.
-
-Q25. Largest Digit
-Find the largest digit in an integer without converting it to a string and without using
-Math.max().
-
-Q26. Second-Largest Distinct Number
-Find the second-largest distinct value in an array without using sort(), sorted(), max(),
-or min(). Define what should happen if no second-largest distinct value exists.
+// console.log(`Positive Sum number:${number_counter}`)
 
 
-Q32. Recursive Factorial
-Calculate factorial using recursion. Explain the base case and test what happens when the
-base case is missing.
+// Q10. Multiplication Table
+// Print the multiplication table for a number from 1 through 12. Format the output clearly.
 
-Q33. Array Statistics
-Write functions to calculate sum, average, smallest value, and largest value without using
-built-in sum/min/max shortcuts. Decide how empty arrays should be handled.
+// let table_input = Number(prompt('Enter a number:'))
+// console.log(`----------${table_input}=Table------------`)
+// for(let num=1; num <=10; num++){
+//   console.log(`${table_input} x ${table_input * num} `)
+// }
 
-Q34. Password Strength Checker
-Write a function that checks length, uppercase, lowercase, digit, and special-character
-requirements. Return useful feedback rather than only true/false.
 
+
+// Q11. Count Even and Odd Numbers
+// For all integers from 1 through N, count how many are even and how many are odd.
+// Validate N before starting.
+
+// let counter_even = 0
+// let counter_odd = 0
+
+// let number_input = Number(prompt('Enter your n number:'))
+
+// for(let num=1; num <= number_input;num++){
+//   value_input = Number(prompt('enter your value number:'))
+//   if(value_input % 2 == 0){
+//     counter_even +=1
+//   }
+//   else{
+//     counter_odd +=1
+//   }
+// }
+
+// console.log(`Total Even Counter:${counter_even}`)
+// console.log(`Total odd Counter:${counter_odd}`)
+
+
+// Q12. Factorial Calculator
+// Calculate N! using a loop. Handle 0! correctly and reject negative or invalid input.
+// Consider what happens when N is very large.
+
+
+
+// Q13. Reverse a Number
+// Reverse an integer mathematically using %, division, and Math.floor(). Do not convert
+// the number to a string and do not use reverse() or split().
+
+
+// Q16. Count Even and Odd Digits
+// For an input integer, count its even digits and odd digits. Example: 58321 contains two
+// even digits (8 and 2) and three odd digits (5, 3, and 1).
+
+
+// Q21. Fibonacci Sequence
+// Print the first N terms of the Fibonacci sequence. Test N values of 0, 1, and 2.
+
+
+
+// Q25. Largest Digit
+// Find the largest digit in an integer without converting it to a string and without using
+// Math.max().
+
+// Q26. Second-Largest Distinct Number
+// Find the second-largest distinct value in an array without using sort(), sorted(), max(),
+// or min(). Define what should happen if no second-largest distinct value exists.
+
+
+
+// Q33. Array Statistics
+// Write functions to calculate sum, average, smallest value, and largest value without using
+// built-in sum/min/max shortcuts. Decide how empty arrays should be handled.
+
+// Q34. Password Strength Checker
+// Write a function that checks length, uppercase, lowercase, digit, and special-character
+// requirements. Return useful feedback rather than only true/false.
 ============================================================
 SECTION D — STRINGS
 ============================================================
