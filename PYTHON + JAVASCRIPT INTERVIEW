@@ -1,0 +1,515 @@
+OBJECTS & OBJECT-ORIENTED PROGRAMMING PYTHON + JAVASCRIPT INTERVIEW
+LOGIC PRACTICE
+============================================================
+
+Purpose: Practice object concepts, object behavior, references, state
+changes, OOP design, and interview-style problem solving.
+
+RULES
+
+1.  Try each question without looking up the answer.
+2.  Explain your reasoning before writing code.
+3.  Test normal cases, edge cases, and invalid input.
+4.  For output-prediction questions, predict the output first.
+5.  Do not move to the next level until you can explain the current one.
+
+============================================================ PART A —
+PYTHON OBJECTS & OOP
+============================================================
+
+LEVEL 1 — OBJECT FUNDAMENTALS
+
+Q1. Create a Student class with name, age, and marks attributes. Create
+three student objects and print their information.
+
+Q2. What is the difference between a class and an object? Explain using
+a real-world example.
+
+Q3. Create a Car class with brand, model, and speed. Add a method that
+increases speed by a given amount.
+
+Q4. Create a BankAccount class with an owner and balance. Add deposit()
+and show_balance() methods.
+
+Q5. Why do instance methods usually take self as their first parameter?
+What happens if self is omitted?
+
+Q6. Predict the output:
+
+    class User:
+        def __init__(self, name):
+            self.name = name
+
+    first = User("Asha")
+    second = User("Ravi")
+    first.name = "Bibek"
+
+    print(first.name)
+    print(second.name)
+
+Q7. Create a Product class. Each object should store its own name and
+price. Change one product’s price. Should the other product change?
+Explain.
+
+Q8. What is the difference between an instance attribute and a class
+attribute? Write a small example demonstrating both.
+
+Q9. Predict the output:
+
+    class Counter:
+        count = 0
+
+        def __init__(self):
+            Counter.count += 1
+
+    a = Counter()
+    b = Counter()
+    c = Counter()
+    print(Counter.count)
+
+Q10. In your own words, explain object state and object behavior.
+
+LEVEL 2 — METHODS, CONSTRUCTORS & ENCAPSULATION
+
+Q11. Create an Employee class with a constructor and a method that
+calculates annual salary from monthly salary.
+
+Q12. Create a Temperature class with a method that converts Celsius to
+Fahrenheit.
+
+Q13. Create a BankAccount class where withdrawal is rejected if the
+amount is greater than the balance.
+
+Q14. Why should an object’s data sometimes be accessed through methods
+instead of being changed directly?
+
+Q15. Create a User class with a private-style attribute for password.
+Add a method to verify a password. Do not print the password.
+
+Q16. What is the difference between __name, _name, and name in Python?
+Explain the practical meaning of each.
+
+Q17. Predict the output:
+
+     class Box:
+         def __init__(self, value):
+             self.value = value
+
+     box = Box(10)
+     box.value = 25
+     print(box.value)
+
+Q18. Add validation to a Product class: - price cannot be negative -
+stock cannot be negative - product name cannot be empty
+
+Q19. What is the purpose of init? Is init technically the object
+creator? Explain the distinction.
+
+Q20. Design a Wallet class with add_money(), spend_money(), and
+get_balance(). List the rules that protect its state.
+
+LEVEL 3 — REFERENCES, MUTABILITY & OBJECT IDENTITY
+
+Q21. Predict the output and explain why:
+
+     first = {"balance": 100}
+     second = first
+     second["balance"] = 500
+     print(first)
+     print(second)
+
+Q22. Predict the output:
+
+     a = [10, 20]
+     b = a
+     b.append(30)
+     print(a)
+
+Q23. Explain the difference between: b = a b = a.copy() Use a list
+example.
+
+Q24. What problem can a shallow copy cause when a dictionary contains
+another dictionary?
+
+Q25. Predict the output:
+
+     user1 = {"profile": {"city": "Pokhara"}}
+     user2 = user1.copy()
+     user2["profile"]["city"] = "Kathmandu"
+     print(user1["profile"]["city"])
+
+Q26. Explain the difference between == and is in Python. Give one
+example where they produce different results.
+
+Q27. Two variables refer to the same object. How can you test that?
+Write code using identity comparison.
+
+Q28. A function receives a dictionary and changes one of its values. Can
+the caller observe that change? Explain with code.
+
+Q29. What is mutability? Classify int, str, list, tuple, and dict as
+mutable or immutable.
+
+Q30. Design a function that safely creates a new list for every call.
+Explain why using a mutable default argument can be dangerous.
+
+LEVEL 4 — INHERITANCE, POLYMORPHISM & ABSTRACTION
+
+Q31. Create a Person class and a Student class that inherits from it.
+Add student-specific attributes.
+
+Q32. What does super() do? Demonstrate it in a child class constructor.
+
+Q33. Create Animal, Dog, and Cat classes. Give each class a speak()
+method with different behavior.
+
+Q34. Explain method overriding with a practical example.
+
+Q35. What is polymorphism? Demonstrate the same method name working
+differently for different object types.
+
+Q36. Design a Payment base class and CashPayment and CardPayment child
+classes. Each should implement process_payment().
+
+Q37. What is the difference between inheritance and composition? Give an
+example of each.
+
+Q38. Design a Car that contains an Engine object. Why might composition
+be better than inheriting from Engine?
+
+Q39. What is abstraction? Explain what details should be hidden from a
+user of a payment system.
+
+Q40. When can inheritance make a design worse? Give one example.
+
+LEVEL 5 — PYTHON OOP INTERVIEW LOGIC
+
+Q41. Design a Library system with Book and Member objects. A member can
+borrow and return a book. Prevent borrowing an unavailable book.
+
+Q42. Design an ATM using Account objects. Support deposit, withdrawal,
+balance inquiry, and transaction history.
+
+Q43. Design an Inventory system using Product objects. Support adding
+stock, selling stock, and rejecting sales when stock is insufficient.
+
+Q44. Design a ShoppingCart class. Support adding items, removing items,
+calculating totals, and applying a discount.
+
+Q45. Design an Employee Payroll system. Different employee types should
+calculate pay differently.
+
+Q46. Design a ParkingLot system. Track available spaces and prevent
+parking when full.
+
+Q47. Design a TradingPosition class with entry price, quantity,
+direction, stop loss, and exit price. Calculate profit or loss. State
+your assumptions.
+
+Q48. Design a TradeJournal class that stores multiple Trade objects.
+Calculate total trades, winning trades, losing trades, and win rate.
+
+Q49. Design a Notification system with EmailNotification,
+SMSNotification, and PushNotification classes. Use a common send()
+interface.
+
+Q50. You inherit a codebase with one huge class handling users,
+payments, reports, and notifications. How would you split its
+responsibilities? Explain before coding.
+
+============================================================ PART B —
+JAVASCRIPT OBJECTS
+============================================================
+
+LEVEL 1 — OBJECT BASICS
+
+Q1. Create a user object with name, age, and email properties. Print
+each property.
+
+Q2. Add a new property called city to an existing object.
+
+Q3. Update a product object’s price and print the updated object.
+
+Q4. Delete one property from an object. What happens if the property
+does not exist?
+
+Q5. Explain dot notation and bracket notation. When is bracket notation
+necessary?
+
+Q6. Predict the output:
+
+    const user = { name: "Asha", age: 20 };
+    user.age = 21;
+    console.log(user.age);
+
+Q7. Predict the output:
+
+    const user = { name: "Asha" };
+    user.city = "Pokhara";
+    console.log(user);
+
+Q8. Does const make an object immutable? Prove your answer.
+
+Q9. Create an array of five product objects. Print the name of each
+product using a loop.
+
+Q10. Given a student object, check whether it contains a marks property.
+
+LEVEL 2 — OBJECT REFERENCES & COPYING
+
+Q11. Predict the output:
+
+     const user1 = { name: "Bibek" };
+     const user2 = user1;
+     user2.name = "Ravi";
+     console.log(user1.name);
+
+Q12. Explain why assigning one object to another variable does not
+automatically create a new independent object.
+
+Q13. Create a shallow copy using the spread operator. Change a top-level
+property and compare the two objects.
+
+Q14. Predict the output:
+
+     const a = { profile: { city: "Pokhara" } };
+     const b = { ...a };
+     b.profile.city = "Kathmandu";
+     console.log(a.profile.city);
+
+Q15. Explain why the spread operator makes only a shallow copy.
+
+Q16. Create a nested object and make an independent copy using
+structuredClone(). Mention one limitation or condition.
+
+Q17. Explain the difference between object equality by value-like
+structure and object identity in JavaScript.
+
+Q18. Predict the output:
+
+     const a = { score: 10 };
+     const b = { score: 10 };
+     console.log(a === b);
+
+Q19. Write a function that receives an object and returns a new object
+with an updated age without modifying the original.
+
+Q20. A function changes an object’s property. Can the caller see the
+change? Demonstrate and explain.
+
+LEVEL 3 — OBJECT METHODS & THIS
+
+Q21. Create a calculator object with add(), subtract(), and multiply()
+methods.
+
+Q22. Create a user object with a greet() method that uses this.name.
+
+Q23. Predict the output:
+
+     const user = {
+       name: "Bibek",
+       greet() {
+         console.log(this.name);
+       }
+     };
+     user.greet();
+
+Q24. What does this refer to when a method is called through an object?
+
+Q25. What can go wrong if an object method using this is detached from
+its object? Explain with an example.
+
+Q26. Create a bankAccount object with deposit(), withdraw(), and
+getBalance() methods.
+
+Q27. Use Object.keys(), Object.values(), and Object.entries() on a
+student object. Explain what each returns.
+
+Q28. Use a loop to calculate the total value of all numeric properties
+in an object.
+
+Q29. Create a method that counts how many products are stored in a cart
+object.
+
+Q30. Explain the difference between a method and a property.
+
+LEVEL 4 — OBJECT DESIGN & MODERN JAVASCRIPT
+
+Q31. Create a class named Student with a constructor and a display()
+method. Create three instances.
+
+Q32. Create a Product class with a method that calculates the discounted
+price.
+
+Q33. Create a BankAccount class. Reject withdrawals that exceed balance.
+
+Q34. Explain the difference between a class and an object in JavaScript.
+
+Q35. Create an Admin class that extends a User class. Use super() in its
+constructor.
+
+Q36. Override a method in a child class.
+
+Q37. Explain inheritance and composition with examples.
+
+Q38. Use a static method to validate a product code. Explain why it does
+not need a particular instance.
+
+Q39. What are getters and setters? Create a safe balance getter and
+deposit method.
+
+Q40. When would you choose a factory function instead of a class?
+
+LEVEL 5 — JAVASCRIPT OBJECT INTERVIEW LOGIC
+
+Q41. Given an array of user objects, find the user with the highest age.
+
+Q42. Given an array of products, calculate the total inventory value:
+price multiplied by quantity for every product.
+
+Q43. Group an array of transactions by transaction type.
+
+Q44. Count how many times each word appears in an array. Store the
+result in an object.
+
+Q45. Find duplicate email addresses in an array of user objects.
+
+Q46. Merge two user objects. If both contain the same property, define
+which value should win.
+
+Q47. Build a shopping cart using objects and arrays. Support add,
+remove, quantity update, and total calculation.
+
+Q48. Build a task manager. Each task has an id, title, completed status,
+and priority. Support add, complete, delete, and filter operations.
+
+Q49. Build a mini trading portfolio. Each holding has symbol, quantity,
+and average buy price. Calculate total invested value and unrealized
+profit/loss from supplied market prices.
+
+Q50. Design a notification manager that supports email, SMS, and push
+notification objects through one common interface.
+
+============================================================ PART C —
+OUTPUT PREDICTION INTERVIEW ROUND
+============================================================
+
+For every question: 1. Predict the exact output. 2. Explain the
+reference or object behavior. 3. Run the code only after making your
+prediction.
+
+PYTHON
+
+P1. a = [1, 2] b = a c = a.copy() b.append(3) c.append(4) print(a)
+print(b) print(c)
+
+P2. data = {“x”: 10} def update(item): item[“x”] = 50 update(data)
+print(data)
+
+P3. class Demo: value = 10 x = Demo() y = Demo() x.value = 99
+print(x.value) print(y.value) print(Demo.value)
+
+P4. class User: def init(self, name): self.name = name first = User(“A”)
+second = first second.name = “B” print(first.name)
+
+P5. values = [[1, 2], [3, 4]] copied = values.copy() copied[0].append(9)
+print(values)
+
+JAVASCRIPT
+
+P6. const a = { points: 10 }; const b = a; b.points = 30;
+console.log(a.points);
+
+P7. const first = { score: 10 }; const second = { score: 10 };
+console.log(first === second);
+
+P8. const original = { info: { level: 1 } }; const copy = { …original };
+copy.info.level = 5; console.log(original.info.level);
+
+P9. const user = { name: “A”, age: 20 }; const { name, …rest } = user;
+console.log(name); console.log(rest);
+
+P10. const product = { price: 100, quantity: 3 }; product.quantity += 2;
+console.log(product.price * product.quantity);
+
+============================================================ PART D —
+INTERVIEW EXPLANATION QUESTIONS
+============================================================
+
+Answer each in 60–90 seconds, using a small example.
+
+1.  What is an object, and why do programs use objects?
+2.  What is the difference between a class and an object?
+3.  What is object state?
+4.  What is object behavior?
+5.  What is encapsulation, and what problem does it solve?
+6.  What is inheritance? When should it be avoided?
+7.  What is polymorphism?
+8.  What is abstraction?
+9.  What is composition?
+10. What is the difference between mutable and immutable values?
+11. What is a reference?
+12. What is the difference between shallow copy and deep copy?
+13. Why can two variables change the same object?
+14. What is the difference between equality and identity?
+15. What is the purpose of a constructor?
+16. What is method overriding?
+17. What is the difference between an instance method and a static
+    method?
+18. Why should a class have a clear responsibility?
+19. How would you test an object’s behavior?
+20. How would you protect an account balance from invalid changes?
+
+============================================================ PART E —
+REAL INTERVIEW DESIGN CHALLENGES
+============================================================
+
+These are design exercises. First identify the objects, their data,
+their methods, and the rules between them. Then implement the system.
+
+D1. BANKING SYSTEM Objects: Customer, BankAccount, Transaction
+Requirements: - One customer can own multiple accounts. - Deposit and
+withdrawal create transactions. - Reject invalid amounts. - Never allow
+an invalid withdrawal. - Display account and transaction history.
+
+D2. INVENTORY MANAGEMENT Objects: Product, Inventory, Supplier
+Requirements: - Add and remove products. - Update stock. - Reject
+selling more than available stock. - Calculate total inventory value. -
+Identify low-stock products.
+
+D3. LIBRARY MANAGEMENT Objects: Book, Member, Library Requirements: -
+Add and search books. - Issue and return books. - Track availability. -
+Prevent duplicate or invalid operations.
+
+D4. TRADING PORTFOLIO Objects: Asset, Holding, Portfolio, Trade
+Requirements: - Buy and sell quantities. - Track average entry price. -
+Calculate invested value. - Calculate unrealized profit/loss. - Reject a
+sale larger than the held quantity. - Keep a trade history.
+
+D5. STUDENT MANAGEMENT Objects: Student, Course, GradeBook
+Requirements: - Register students. - Add course marks. - Calculate
+averages and grades. - Rank students. - Handle missing marks safely.
+
+D6. E-COMMERCE SYSTEM Objects: User, Product, Cart, Order, Payment
+Requirements: - Add and remove cart items. - Calculate subtotal and
+discount. - Validate stock before checkout. - Create an order only after
+successful validation. - Track order status.
+
+============================================================
+SELF-ASSESSMENT CHECKLIST
+============================================================
+
+[ ] I can explain class vs object. [ ] I can create objects and call
+their methods. [ ] I understand instance and class attributes. [ ] I
+understand object references. [ ] I can explain mutability. [ ] I can
+distinguish shallow and deep copies. [ ] I understand encapsulation. [ ]
+I can use inheritance when appropriate. [ ] I understand polymorphism
+and overriding. [ ] I can use composition. [ ] I can predict
+object-related output. [ ] I can design a small system before coding. [
+] I can explain edge cases and validation rules. [ ] I can solve the
+challenges without copying a solution.
+
+FINAL RULE
+
+Do not memorize interview answers. Understand the behavior, predict the
+result, explain the reason, and then write and test the code.
