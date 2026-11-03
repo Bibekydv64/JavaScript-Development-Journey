@@ -194,78 +194,6 @@ SECTION A — CONDITIONALS AND DECISION LOGIC
 
 
 
-
-============================================================
-SECTION B — LOOPS AND COUNTERS
-============================================================
-
-Q09. Sum from 1 to N
-Ask for a positive integer N and calculate the sum from 1 through N using a loop.
-Do not use the arithmetic-series formula.
-
-Q10. Multiplication Table
-Print the multiplication table for a number from 1 through 12. Format the output clearly.
-
-Q11. Count Even and Odd Numbers
-For all integers from 1 through N, count how many are even and how many are odd.
-Validate N before starting.
-
-Q12. Factorial Calculator
-Calculate N! using a loop. Handle 0! correctly and reject negative or invalid input.
-Consider what happens when N is very large.
-
-Q13. Reverse a Number
-Reverse an integer mathematically using %, division, and Math.floor(). Do not convert
-the number to a string and do not use reverse() or split().
-
-Q14. Count Digits
-Count the digits in an integer without converting it to a string. Decide how your program
-will handle zero and negative numbers.
-
-Q15. Sum of Digits
-Calculate the sum of the digits of an integer using a loop and arithmetic operations.
-
-Q16. Count Even and Odd Digits
-For an input integer, count its even digits and odd digits. Example: 58321 contains two
-even digits (8 and 2) and three odd digits (5, 3, and 1).
-
-Q17. Product of Digits
-Calculate the product of all digits in an integer. Think carefully about how zero digits
-affect the result.
-
-Q18. Palindrome Number
-Determine whether an integer reads the same forward and backward. Solve without converting
-it to a string.
-
-Q19. Prime Number Checker
-Determine whether a number is prime. Reject values below 2 and avoid unnecessary checks.
-
-Q20. Print Prime Numbers
-Print all prime numbers between 1 and N. Keep the prime-checking logic understandable.
-
-Q21. Fibonacci Sequence
-Print the first N terms of the Fibonacci sequence. Test N values of 0, 1, and 2.
-
-Q22. Greatest Common Divisor
-Find the GCD of two integers using a loop. Try the Euclidean algorithm and explain why it
-works in your README.
-
-Q23. Least Common Multiple
-Find the LCM of two integers. Handle zero inputs and avoid needless repeated checks where
-possible.
-
-Q24. Armstrong Number
-Check whether a number equals the sum of its digits each raised to the power of the number
-of digits. Test more than just three-digit examples.
-
-Q25. Largest Digit
-Find the largest digit in an integer without converting it to a string and without using
-Math.max().
-
-Q26. Second-Largest Distinct Number
-Find the second-largest distinct value in an array without using sort(), sorted(), max(),
-or min(). Define what should happen if no second-largest distinct value exists.
-
 ============================================================
 SECTION C — FUNCTIONS AND REUSABLE LOGIC
 ============================================================
@@ -396,9 +324,81 @@ function grade(){
     console.log('Nalayek Fail xe ')
   } 
 }
-
-
 grade()
+
+
+
+
+============================================================
+SECTION B — LOOPS AND COUNTERS
+============================================================
+
+Q09. Sum from 1 to N
+Ask for a positive integer N and calculate the sum from 1 through N using a loop.
+Do not use the arithmetic-series formula.
+
+Q10. Multiplication Table
+Print the multiplication table for a number from 1 through 12. Format the output clearly.
+
+Q11. Count Even and Odd Numbers
+For all integers from 1 through N, count how many are even and how many are odd.
+Validate N before starting.
+
+Q12. Factorial Calculator
+Calculate N! using a loop. Handle 0! correctly and reject negative or invalid input.
+Consider what happens when N is very large.
+
+Q13. Reverse a Number
+Reverse an integer mathematically using %, division, and Math.floor(). Do not convert
+the number to a string and do not use reverse() or split().
+
+Q14. Count Digits
+Count the digits in an integer without converting it to a string. Decide how your program
+will handle zero and negative numbers.
+
+Q15. Sum of Digits
+Calculate the sum of the digits of an integer using a loop and arithmetic operations.
+
+Q16. Count Even and Odd Digits
+For an input integer, count its even digits and odd digits. Example: 58321 contains two
+even digits (8 and 2) and three odd digits (5, 3, and 1).
+
+Q17. Product of Digits
+Calculate the product of all digits in an integer. Think carefully about how zero digits
+affect the result.
+
+Q18. Palindrome Number
+Determine whether an integer reads the same forward and backward. Solve without converting
+it to a string.
+
+Q19. Prime Number Checker
+Determine whether a number is prime. Reject values below 2 and avoid unnecessary checks.
+
+Q20. Print Prime Numbers
+Print all prime numbers between 1 and N. Keep the prime-checking logic understandable.
+
+Q21. Fibonacci Sequence
+Print the first N terms of the Fibonacci sequence. Test N values of 0, 1, and 2.
+
+Q22. Greatest Common Divisor
+Find the GCD of two integers using a loop. Try the Euclidean algorithm and explain why it
+works in your README.
+
+Q23. Least Common Multiple
+Find the LCM of two integers. Handle zero inputs and avoid needless repeated checks where
+possible.
+
+Q24. Armstrong Number
+Check whether a number equals the sum of its digits each raised to the power of the number
+of digits. Test more than just three-digit examples.
+
+Q25. Largest Digit
+Find the largest digit in an integer without converting it to a string and without using
+Math.max().
+
+Q26. Second-Largest Distinct Number
+Find the second-largest distinct value in an array without using sort(), sorted(), max(),
+or min(). Define what should happen if no second-largest distinct value exists.
 
 
 Q32. Recursive Factorial
@@ -552,29 +552,490 @@ Features:
 - Validate required fields and prevent accidental duplicate contacts.
 Stretch goal: sort contacts alphabetically and save/load JSON data.
 
-============================================================
-GITHUB SUBMISSION CHECKLIST
-============================================================
 
-For every question:
-[ ] Create a separate .js file with a meaningful filename.
-[ ] Write the problem statement as a comment.
-[ ] Solve it independently.
-[ ] Test normal, boundary, and invalid inputs.
-[ ] Add a short note explaining the logic in your own words.
-[ ] Commit the solution to GitHub.
 
-For every CLI project:
-[ ] Write a README with purpose, features, run instructions, and example usage.
-[ ] Split the program into small functions.
-[ ] Validate user input.
-[ ] Test incorrect and unexpected inputs.
-[ ] Keep commits small and meaningful.
-[ ] Never upload passwords, API keys, or other secrets.
 
-Important:
-These are practice prompts, not reference solutions. If stuck, first write the steps in plain
-English, then trace the variables manually, and only then write JavaScript.
+RULES
+
+1.  Predict output before running code.
+2.  Explain WHY the output happens.
+3.  Write code yourself; do not copy solutions.
+4.  Test edge cases (missing property, empty object, duplicate values).
+5.  For design questions, explain the data structure before coding.
+
+============================================================= LEVEL 1 —
+OBJECT FUNDAMENTALS
+=============================================================
+
+Q1. Create an object named student with name, age, course, and marks.
+Print each property.
+
+Q2. Create an object named product. Add a new property called stock
+after the object has been created.
+
+Q3. Update the price property of a product object and print the object.
+
+Q4. Delete the email property from a user object. Check whether the
+property still exists.
+
+Q5. Explain the difference between dot notation and bracket notation.
+Create an example where bracket notation is necessary.
+
+Q6. What happens when you try to access a property that does not exist?
+Demonstrate it.
+
+Q7. Check whether an object contains a property named “email”. Solve it
+using the in operator and Object.hasOwn().
+
+Q8. Create an object with a property whose key contains a space. Read
+and update that property.
+
+Q9. Create an object with three methods: login(), logout(), and
+showProfile(). Each method should print a meaningful message.
+
+Q10. Explain the difference between a property and a method.
+
+Q11. Predict the output:
+
+     const user = { name: "Asha", age: 20 };
+     user.age = 21;
+     user.city = "Pokhara";
+     console.log(user);
+
+Q12. Predict the output:
+
+     const product = { name: "Mouse", price: 500 };
+     delete product.price;
+     console.log(product.price);
+
+Q13. Predict the output:
+
+     const user = { name: "Bibek" };
+     console.log("name" in user);
+     console.log("age" in user);
+
+Q14. Create an object using a variable as a property key. Example: the
+variable key contains “username”.
+
+Q15. Write a function that accepts an object and prints all its property
+names.
+
+============================================================= LEVEL 2 —
+OBJECT REFERENCES & MEMORY LOGIC
+=============================================================
+
+Q16. Predict the output and explain:
+
+     const user1 = { name: "Bibek" };
+     const user2 = user1;
+     user2.name = "Rahul";
+     console.log(user1.name);
+     console.log(user2.name);
+
+Q17. Does assigning one object to another variable create a new object?
+Explain using a simple example.
+
+Q18. Predict the output:
+
+     const a = { score: 10 };
+     const b = a;
+     b.score = 50;
+     console.log(a.score);
+
+Q19. Predict the output:
+
+     const first = { value: 10 };
+     const second = { value: 10 };
+     console.log(first === second);
+
+Q20. Explain the difference between changing an object’s property and
+reassigning the variable that refers to the object.
+
+Q21. Predict the output:
+
+     let user1 = { name: "Asha" };
+     let user2 = user1;
+     user2 = { name: "Ravi" };
+     console.log(user1.name);
+     console.log(user2.name);
+
+Q22. Write a function that changes an object’s age. Call it and check
+whether the original object changes.
+
+Q23. Write a function that receives an object but does not mutate it.
+Return a new object with the age increased by one.
+
+Q24. Explain why const prevents reassignment but does not make an object
+immutable. Demonstrate both cases.
+
+Q25. Predict the output:
+
+     const settings = { theme: "light" };
+     settings.theme = "dark";
+     console.log(settings.theme);
+
+Q26. What happens if you try to assign a completely new object to a
+const variable? Explain the error.
+
+Q27. Create two variables that refer to the same object. Prove that they
+share the same reference using strict equality.
+
+Q28. Explain object identity. Why are two separate objects with the same
+properties still different objects?
+
+Q29. Write a function that removes a property from an object. Does the
+original object change? Explain.
+
+Q30. Given two objects, determine whether they are the same reference or
+merely have the same property values. Explain the limitation of using
+JSON.stringify() for general deep equality.
+
+============================================================= LEVEL 3 —
+COPYING: SHALLOW COPY & DEEP COPY
+=============================================================
+
+Q31. Create a shallow copy of an object using the spread operator.
+
+Q32. Create a shallow copy using Object.assign(). Compare it with the
+spread operator.
+
+Q33. Predict the output:
+
+     const original = { name: "Asha", age: 20 };
+     const copy = { ...original };
+     copy.name = "Ravi";
+     console.log(original.name);
+     console.log(copy.name);
+
+Q34. Predict the output:
+
+     const original = { profile: { city: "Pokhara" } };
+     const copy = { ...original };
+     copy.profile.city = "Kathmandu";
+     console.log(original.profile.city);
+
+Q35. Why is the spread operator called a shallow-copy operation?
+
+Q36. Create a nested object and make a deep copy using
+structuredClone(). Change a nested property in the copy and check the
+original.
+
+Q37. Explain one limitation of structuredClone(). Give an example of a
+value it cannot clone.
+
+Q38. Predict the output:
+
+     const a = { items: [1, 2, 3] };
+     const b = { ...a };
+     b.items.push(4);
+     console.log(a.items);
+
+Q39. Copy an object that contains a nested object. Make the nested
+object independent without using structuredClone().
+
+Q40. A settings object has nested preferences. You need to update only
+preferences.theme without mutating the original. Write the update using
+nested spread syntax.
+
+============================================================= LEVEL 4 —
+NESTED OBJECTS & OBJECT METHODS
+=============================================================
+
+Q41. Create a user object containing a nested address object. Print the
+user’s city.
+
+Q42. Update only the city inside a nested address object.
+
+Q43. Safely read a deeply nested property when an intermediate property
+might be missing. Use optional chaining.
+
+Q44. Use nullish coalescing to provide a default city when city is null
+or undefined. Explain how it differs from ||.
+
+Q45. Use Object.keys() to get all property names from an object.
+
+Q46. Use Object.values() to calculate the total of numeric values in an
+object.
+
+Q47. Use Object.entries() to print each key and value.
+
+Q48. Convert an array of key-value pairs into an object using
+Object.fromEntries().
+
+Q49. Use Object.freeze() on an object. Try changing a property. Explain
+what freeze does and does not guarantee.
+
+Q50. Use Object.seal() on an object. Try adding, deleting, and changing
+properties. Explain the result.
+
+Q51. Create a function that counts the number of own enumerable
+properties in an object.
+
+Q52. Given an object of subject marks, find the subject with the highest
+marks.
+
+Q53. Given an object of monthly expenses, calculate the total expense
+and average expense.
+
+Q54. Convert an object into an array of strings formatted as “key:
+value”.
+
+Q55. Remove all properties whose values are null or undefined, returning
+a new object.
+
+============================================================= LEVEL 5 —
+ARRAYS OF OBJECTS: INTERVIEW LOGIC
+=============================================================
+
+Use this data for Q56–Q65:
+
+const products = [ { id: 1, name: “Keyboard”, price: 1200, stock: 5 }, {
+id: 2, name: “Mouse”, price: 500, stock: 0 }, { id: 3, name: “Monitor”,
+price: 15000, stock: 3 }, { id: 4, name: “USB Cable”, price: 250, stock:
+10 }, { id: 5, name: “Headphone”, price: 2500, stock: 0 }];
+
+Q56. Print the name of every product.
+
+Q57. Find all products whose price is greater than 1000.
+
+Q58. Find the product with the highest price.
+
+Q59. Calculate the total inventory value using price * stock.
+
+Q60. Find all products that are out of stock.
+
+Q61. Return a new array containing only product names and prices.
+
+Q62. Increase every product’s price by 10% without mutating the original
+products array.
+
+Q63. Find a product by its id. Handle an id that does not exist.
+
+Q64. Sort products by price from lowest to highest.
+
+Q65. Group products into “Available” and “Out of Stock” categories.
+
+============================================================= LEVEL 6 —
+OBJECT TRANSFORMATION & DATA LOGIC
+=============================================================
+
+Q66. Convert this array into an object where each id is a key:
+
+     [
+       { id: 101, name: "Asha" },
+       { id: 102, name: "Ravi" },
+       { id: 103, name: "Bibek" }
+     ]
+
+Q67. Count how many times each word appears and store the counts in an
+object.
+
+Q68. Find duplicate email addresses in an array of user objects.
+
+Q69. Merge two objects. If both contain the same key, the second
+object’s value should win.
+
+Q70. Write a function that compares two flat objects and returns the
+keys whose values are different.
+
+Q71. Remove duplicate users based on their id.
+
+Q72. Group transactions by type:
+
+     [
+       { type: "deposit", amount: 100 },
+       { type: "withdraw", amount: 40 },
+       { type: "deposit", amount: 200 }
+     ]
+
+Q73. Find the user with the highest salary from an array of employees.
+
+Q74. Calculate the average marks of students from an array of objects.
+Ignore students whose marks are missing or invalid.
+
+Q75. Convert an object into a query-string-like format. Example: { page:
+2, limit: 10 } -> “page=2&limit=10”. State how you handle special
+characters.
+
+============================================================= LEVEL 7 —
+THIS, METHODS & OBJECT BEHAVIOR
+=============================================================
+
+Q76. Create an object with name and greet() method. Use this.name inside
+greet().
+
+Q77. Predict the output:
+
+     const user = {
+       name: "Bibek",
+       greet() {
+         console.log(this.name);
+       }
+     };
+     user.greet();
+
+Q78. What does this refer to when a method is called as object.method()?
+
+Q79. Store an object method in another variable and call it. Investigate
+what happens to this.
+
+Q80. Explain why arrow functions behave differently from regular
+functions regarding this.
+
+Q81. Create a counter object with increment(), decrement(), and reset().
+
+Q82. Create a bank account object with deposit(), withdraw(), and
+getBalance(). Reject invalid withdrawals.
+
+Q83. Create a shopping cart object with addItem(), removeItem(), and
+getTotal().
+
+Q84. Create a method that uses Object.keys(this) to count the object’s
+own enumerable properties. Discuss any caveats.
+
+Q85. Explain the difference between a regular function method and an
+arrow function used as an object property.
+
+============================================================= LEVEL 8 —
+PROTOTYPES & OBJECT MODEL
+=============================================================
+
+Q86. What is a prototype in JavaScript?
+
+Q87. Create two objects using Object.create() with a shared prototype.
+
+Q88. Explain the difference between an own property and an inherited
+property.
+
+Q89. Use Object.hasOwn() to check whether a property belongs directly to
+an object.
+
+Q90. Explain the prototype chain in your own words.
+
+Q91. Create a constructor function named Person and add a method to
+Person.prototype.
+
+Q92. Why can putting a shared method on a prototype save memory compared
+with creating a separate function in every instance?
+
+Q93. Explain the difference between Object.getPrototypeOf() and
+Object.setPrototypeOf(). Why should changing prototypes be done
+carefully?
+
+Q94. What is the difference between a constructor function and a class
+in modern JavaScript?
+
+Q95. Create a class with a static method and explain why it is called on
+the class rather than an instance.
+
+============================================================= LEVEL 9 —
+REAL-WORLD OBJECT DESIGN
+=============================================================
+
+Q96. Design a user profile object with updateProfile() and
+displayProfile() behavior.
+
+Q97. Design an inventory object that stores products by id. Support add,
+update, remove, and search.
+
+Q98. Design a shopping cart using product objects. Support add, remove,
+quantity update, and total calculation.
+
+Q99. Design a bank account object. Store balance and transaction
+history. Reject invalid operations.
+
+Q100. Design a student result system using student objects. Calculate
+total, percentage, grade, and ranking.
+
+Q101. Design a task manager. Each task has id, title, completed, and
+priority. Support create, update, complete, delete, and filter.
+
+Q102. Design a library data model with book objects and member objects.
+Track which member borrowed each available book.
+
+Q103. Design a trading portfolio using holding objects: symbol,
+quantity, averageEntry, and currentPrice. Calculate invested value and
+unrealized P/L.
+
+Q104. Design a trade object with entry, exit, direction, quantity, stop
+loss, and risk. Define validation rules before coding.
+
+Q105. Design a notification configuration object that supports email,
+SMS, and push preferences for each user.
+
+============================================================= LEVEL 10 —
+HARD INTERVIEW THINKING
+=============================================================
+
+Q106. Given two nested objects, write a deep comparison function. Define
+how arrays, null, and different data types are handled.
+
+Q107. Write a function that safely updates a nested property using a
+path such as “profile.address.city”.
+
+Q108. Write a function that converts a nested object into flat keys.
+Example: { user: { name: “Asha” } } becomes { “user.name”: “Asha” }.
+
+Q109. Write a function that reconstructs a nested object from
+dot-separated keys.
+
+Q110. Implement a simple object-based cache: - set(key, value) -
+get(key) - remove(key) - clear() - handle missing keys
+
+Q111. Build a transaction analyzer that groups records by account id and
+calculates total deposits and withdrawals.
+
+Q112. Detect suspicious transactions using object data: unusually large
+amount, repeated transfers, and rapid frequency. Define thresholds and
+explain false-positive risks.
+
+Q113. Build a portfolio analyzer that calculates allocation percentage
+per asset and identifies the largest holding.
+
+Q114. Given a list of candles represented as objects { open, high, low,
+close }, classify each as bullish, bearish, or doji. State your doji
+threshold.
+
+Q115. Design a market watchlist object that supports adding symbols,
+removing symbols, updating prices, and finding the biggest mover.
+
+============================================================= BONUS —
+OUTPUT PREDICTION ROUND
+=============================================================
+
+Predict every output before running the code. Explain the reason.
+
+P1. const a = { x: 1 }; const b = a; b.x = 9; console.log(a.x);
+
+P2. const a = { x: 1 }; const b = { …a }; b.x = 9; console.log(a.x);
+
+P3. const a = { nested: { x: 1 } }; const b = { …a }; b.nested.x = 9;
+console.log(a.nested.x);
+
+P4. const user = { name: “Asha” }; console.log(user.age);
+console.log(“age” in user);
+
+P5. const user = { name: “Asha”, age: 20 }; const { name, …rest } =
+user; console.log(name); console.log(rest);
+
+P6. const data = { a: 1, b: 2, c: 3 }; const { b, …other } = data;
+console.log(other);
+
+P7. const x = { score: 10 }; const y = { score: 10 }; console.log(x ==
+y); console.log(x === y);
+
+P8. const user = { name: “Bibek”, greet() { return this.name; } };
+console.log(user.greet());
+
+P9. const settings = Object.freeze({ theme: “light” }); settings.theme =
+“dark”; console.log(settings.theme);
+
+P10. const original = { items: [1, 2] }; const copy =
+structuredClone(original); copy.items.push(3);
+console.log(original.items); console.log(copy.items);
+
+
+
 
 
 
