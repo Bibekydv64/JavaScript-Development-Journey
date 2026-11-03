@@ -22,7 +22,7 @@ let user_range = Number(prompt('Enter a size of list:'))
 for(let num=1; num <= user_range; num++){
   let user_number = Number(prompt('Enter Number'))
   obj.push(user_number)
-  if(obj % 2 == 0){
+  if(obj > 0{
     positive_counter = positive_counter+1
     positive_sum = positive_sum+obj
   }
@@ -68,26 +68,7 @@ print(f'Total Postive Sum:{positive_sum}')
 print(f'Negative Counter:{negative_counter}')
 print(f'Total Negative sum:{negative_sum}')
         
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Q3 — ATM Withdrawal Logic💳
-# Initial balance = 5000
-# Take 5 withdrawal attempts.
-# Rules:
-# If withdrawal > balance:
-# print "Insufficient Balance"
-# Otherwise deduct amount
-# Count successful withdrawals
-# Find largest withdrawal
-# Print remaining balance
-# Real Logic Here 🧠
-# Balance changes every iteration.
-
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Q5 — Advanced Positive Number Logic 🔥
 # Take numbers continuously from user.
