@@ -332,6 +332,8 @@ grade()
 // SECTION B — LOOPS AND COUNTERS
 // ============================================================
 
+=============================================using js =========================================================================
+
 // Q09. Sum from 1 to N
 // Ask for a positive integer N and calculate the sum from 1 through N using a loop.
 // Do not use the arithmetic-series formula.
@@ -352,6 +354,19 @@ grade()
 
 // console.log(`Positive Sum number:${number_counter}`)
 
+=============================================using python=========================================================================
+# sum_counter = 0
+
+# user_input = int(input('Enter range of number:'))
+# for num in range(user_input):
+#     user_number = int(input('Enter number'))
+#     sum_counter = user_number + num
+# print(f'Total Sum Counter{sum_counter}')
+
+
+
+=============================================using js =========================================================================
+
 
 // Q10. Multiplication Table
 // Print the multiplication table for a number from 1 through 12. Format the output clearly.
@@ -359,10 +374,18 @@ grade()
 // let table_input = Number(prompt('Enter a number:'))
 // console.log(`----------${table_input}=Table------------`)
 // for(let num=1; num <=10; num++){
-//   console.log(`${table_input} x ${table_input * num} `)
+//   console.log(`${table_input} x ${num} = ${table_input * num} `)
 // }
 
+=============================================using python=========================================================================
 
+# user_input = int(input('Enter size of number:'))
+
+# for num in range(1,11):
+#     print(f'{user_input} X {num} = {user_input*num}')
+
+
+=============================================using js =========================================================================
 
 // Q11. Count Even and Odd Numbers
 // For all integers from 1 through N, count how many are even and how many are odd.
@@ -383,9 +406,22 @@ grade()
 //   }
 // }
 
+
 // console.log(`Total Even Counter:${counter_even}`)
 // console.log(`Total odd Counter:${counter_odd}`)
 
+=============================================using python=========================================================================
+# even_counter = 0
+# odd_counter = 0
+# user_input = int(input('Enter range of number:'))
+# for num in range(user_input):
+#     user_number = int(input('Enter number'))
+#     if user_number % 2 == 0:
+#         even_counter+=1
+#     else:
+#         sum_counter += user_number
+#         odd_counter += 1
+# print(f'Sum number{even_counter}\n number counter{odd_counter}')
 
 // Q12. Factorial Calculator
 // Calculate N! using a loop. Handle 0! correctly and reject negative or invalid input.
