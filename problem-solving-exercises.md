@@ -1,16 +1,74 @@
+// Q1 — Smart Number Analyzer
+// Take 10 numbers and:
+// Count positive numbers
+// Count negative numbers
+// Count even numbers
+// Find largest number
+// Find smallest number
+// Example Output
+// Positive Numbers = 4Negative Numbers = 3Even Numbers = 5Largest Number = 90Smallest Number = -12
 
-Q1 — Smart Number Analyzer
-# Take 10 numbers and:
-# Count positive numbers
-# Count negative numbers
-# Count even numbers
-# Find largest number
-# Find smallest number
-# Example Output
-# Positive Numbers = 4Negative Numbers = 3Even Numbers = 5Largest Number = 90Smallest Number = -12
+-----------------------------------Using-js--------------------------------------------------------------------------
+
+let obj = []
+let positive_counter = 0
+let positive_sum = 0
+
+let negative_counter = 0
+let negative_sum = 0
+
+let user_range = Number(prompt('Enter a size of list:'))
+
+for(let num=1; num <= user_range; num++){
+  let user_number = Number(prompt('Enter Number'))
+  obj.push(user_number)
+  if(obj % 2 == 0){
+    positive_counter = positive_counter+1
+    positive_sum = positive_sum+obj
+  }
+  else{
+    negative_counter = negative_counter+1
+    negative_sum = negative_sum+ obj
+  }
+  }
+
+console.log(`Total +V counter:${positive_counter}`)
+console.log(`Total Positive Sum:${positive_sum}`)
+
+console.log(`Total -V counter:${negative_counter}`)
+console.log(`Total Positive Sum:${negative_sum}`)
 
 
+--------------------------------------------------Using-python--------------------------------------------------------------------------
 
+list = []
+positive_counter = 0
+positive_sum = 0
+
+negative_counter = 0
+negative_sum =0
+
+user_input = int(input('Enter list size:'))
+
+for num in range(user_input):
+    user_numbers_input = int(input('Enter a number:'))
+    list.append(user_numbers_input)
+
+    if num % 2 == 0:
+        positive_counter += 1
+        positive_sum  += num
+
+    else:
+        negative_counter += 1
+        negative_sum  += num
+  
+print(f'total postive Counter:{positive_counter}')
+print(f'Total Postive Sum:{positive_sum}')
+
+print(f'Negative Counter:{negative_counter}')
+print(f'Total Negative sum:{negative_sum}')
+        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Q3 — ATM Withdrawal Logic💳
 # Initial balance = 5000
 # Take 5 withdrawal attempts.
@@ -23,6 +81,9 @@ Q1 — Smart Number Analyzer
 # Print remaining balance
 # Real Logic Here 🧠
 # Balance changes every iteration.
+
+
+
 
 
 
