@@ -68,48 +68,130 @@ print(f'Total Postive Sum:{positive_sum}')
 print(f'Negative Counter:{negative_counter}')
 print(f'Total Negative sum:{negative_sum}')
         
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------using js-------------------------------------------------------------------------------------
 
-# Q5 — Advanced Positive Number Logic 🔥
-# Take numbers continuously from user.
-# Stop only when user enters 0.
-# Then:
-# Count positive numbers
-# Count negative numbers
-# Find largest positive number
-# Find smallest negative number
-# Print sum of all positive numbers
-# Example
-# Input:510-270
-# Output:
-# Positive Count = 3Negative Count = 1Largest Positive = 10Smallest Negative = -2Sum Positive = 22
+// # Q5 — Advanced Positive Number Logic 🔥
+// # Take numbers continuously from user.
+// # Stop only when user enters 0.
+// # Then:
+// # Count positive numbers
+// # Count negative numbers
+// # Find largest positive number
+// # Find smallest negative number
+// # Print sum of all positive numbers
+// # Example
+// # Input:510-270
+// # Output:
+// # Positive Count = 3Negative Count = 1Largest Positive = 10Smallest Negative = -2Sum Positive = 22
 
-
-
-
-
-# Q1 — Positive Filter System
-
-# Take 10 numbers:
-
-# Count positive numbers
-# Sum only positive numbers
-# Ignore negatives
+// let array =[]
+// let positive_counter = 0
+// let positive_sum = 0
+// let negative_counter =0
+// let negative_sum = 0
 
 
-# Q3 — Threshold Analyzer
-# Take 10 numbers:
-# Count numbers > 30
-# Sum numbers > 30
-# Find largest number > 30
+// while(true){
+//   let user_input = Number(prompt('Enter a values:'))
+//   if(user_input != 0){
+//     array.push(user_input)
+//     if(user_input > 0){
+//       positive_counter = positive_counter+1
+//       positive_sum += user_input
+      
+//     }
+//     else{
+//       negative_counter = negative_counter+1
+//       negative_sum += user_input
+//     }
+//   }
+//   else{
+//     console.log('Program Breaked You enter:0')
+//     break
+//   }
+// }
+// console.log(`Your Enter Values${array}`)
+// console.log(`positive Count:${positive_counter}`)
+// console.log(`positive Sum:${positive_sum}`)
+// console.log(`negative Count:${negative_counter}`)
+// console.log(`positive Sum:${negative_sum}`)
+
+// console.log('Min Number:',Math.min.apply(null,array))
+
+
+---------------------------------------------------------------------using js-------------------------------------------------------------------------------------
+
+// # Q1 — Positive Filter System
+// # Take 10 numbers:
+// # Count positive numbers
+// # Sum only positive numbers
+// # Ignore negatives
+// let array_obj= []
+// let postive_count = 0
+// let postive_sum = 0
+
+// console.log('When you Enter 0 program Exit Automatically!')
+// while(true){
+//   user_input = Number(prompt('Enter a values:'))
+//   if(user_input ==0){
+//     console.log('program Exited You enter: 0')
+//     break
+//   }
+//   if(user_input > 0){
+//     array_obj.push(user_input)
+//     postive_sum += user_input
+//     postive_count +=1
+//   }
+//   else{
+//     continue
+//   }
+// }
+
+---------------------------------------------------------------------using js-------------------------------------------------------------------------------------
+// # Q3 — Threshold Analyzer
+// # Take 10 numbers:
+// # Count numbers > 30
+// # Sum numbers > 30
+// # Find largest number > 30
+// let positive_sum = 0
+// let postive_count = 0
+// let array_obj = []
+// for(let num =1; num <=10; num++){
+//   user_input = Number(prompt('Enter a values:'))
+//   if(user_input >= 30){
+//     array_obj.push(user_input)
+//     postive_sum += user_input
+//     postive_count +=1
+//   }
+//   else{
+//     continue
+//   }
+// }
 
 
 
-# Q4 — Negative Data Cleaner
-# Take 10 numbers:
-# Count negative numbers
-# Sum negative numbers
-# Ignore positives completely
+// # Q4 — Negative Data Cleaner
+// # Take 10 numbers:
+// # Count negative numbers
+// # Sum negative numbers
+// # Ignore positives completely
+
+
+// let negative_sum = 0
+// let negative_count = 0
+// let array_obj = []
+// for(let num =1; num <=10; num++){
+//   user_input = Number(prompt('Enter a values:'))
+//   if(user_input < 0){
+//     array_obj.push(user_input)
+//     negative_sum += user_input
+//     negative_count +=1
+//   }
+//   else{
+//     continue
+//   }
+// }
+
 
 
 
