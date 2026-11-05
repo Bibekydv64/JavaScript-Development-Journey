@@ -1,3 +1,5 @@
+---------------------------------------------------------------------QUESTION1------------------------------------------------------------------------------------
+
 // Q1 — Smart Number Analyzer
 // Take 10 numbers and:
 // Count positive numbers
@@ -8,8 +10,7 @@
 // Example Output
 // Positive Numbers = 4Negative Numbers = 3Even Numbers = 5Largest Number = 90Smallest Number = -12
 
------------------------------------Using-js--------------------------------------------------------------------------
-
+-----------------------------------------------------------Using-js--------------------------------------------------------------------------
 let obj = []
 let positive_counter = 0
 let positive_sum = 0
@@ -67,8 +68,7 @@ print(f'Total Postive Sum:{positive_sum}')
 
 print(f'Negative Counter:{negative_counter}')
 print(f'Total Negative sum:{negative_sum}')
-        
----------------------------------------------------------------------using js-------------------------------------------------------------------------------------
+---------------------------------------------------------------------QUESTION2------------------------------------------------------------------------------------
 
 // # Q5 — Advanced Positive Number Logic 🔥
 // # Take numbers continuously from user.
@@ -83,7 +83,7 @@ print(f'Total Negative sum:{negative_sum}')
 // # Input:510-270
 // # Output:
 // # Positive Count = 3Negative Count = 1Largest Positive = 10Smallest Negative = -2Sum Positive = 22
-
+--------------------------------------------------------Using-js--------------------------------------------------------------------------
 // let array =[]
 // let positive_counter = 0
 // let positive_sum = 0
@@ -118,18 +118,41 @@ print(f'Total Negative sum:{negative_sum}')
 
 // console.log('Min Number:',Math.min.apply(null,array))
 
-
----------------------------------------------------------------------using js-------------------------------------------------------------------------------------
+---------------------------------------------------------------------QUESTION3-------------------------------------------------------------------------------------
 
 // # Q1 — Positive Filter System
 // # Take 10 numbers:
 // # Count positive numbers
 // # Sum only positive numbers
 // # Ignore negatives
+---------------------------------------------------------------------using python---------------------------------------------------------------------------------
+positive_counter = 0
+positive_sum = 0
+negative_count =0
+negative_sum =0
+list = []
+print('When you enter program Exits sucessfully')
+while True:
+    user_input = int(input("Enter a Number:"))
+    if user_input == 0:
+        break
+
+    if user_input > 0 :
+        list.append(list)
+        positive_counter +=1
+        positive_sum += user_input
+
+    else:
+        negative_count +=1
+        negative_sum =+ user_input
+        
+print(f'List of +v number:{list}')
+print(f'Positive counter:{positive_counter}\nNegative count:{negative_count}')
+print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
+---------------------------------------------------------------------using js-------------------------------------------------------------------------------------
 // let array_obj= []
 // let postive_count = 0
 // let postive_sum = 0
-
 // console.log('When you Enter 0 program Exit Automatically!')
 // while(true){
 //   user_input = Number(prompt('Enter a values:'))
@@ -146,13 +169,31 @@ print(f'Total Negative sum:{negative_sum}')
 //     continue
 //   }
 // }
+-----------------------------------------------------------------QUESTION4-----------------------------------------------------------------------------------------
 
----------------------------------------------------------------------using js-------------------------------------------------------------------------------------
 // # Q3 — Threshold Analyzer
 // # Take 10 numbers:
 // # Count numbers > 30
 // # Sum numbers > 30
 // # Find largest number > 30
+-----------------------------------------------------------------------------Using python-------------------------------------------------------------------------
+# list = []
+# positive_sum = 0
+# positive_count = 0
+
+# for num in range(10):
+#     if num > 0:
+#         list.append(num)
+#         positive_sum + num
+#         positive_count +=1
+
+#     else:
+#         continue
+
+# print(f'List of +v number:{list}')
+# print(f'Positive Count:{positive_count}\n positive Sum:{positive_sum}')
+
+---------------------------------------------------------------------using js-------------------------------------------------------------------------------------
 // let positive_sum = 0
 // let postive_count = 0
 // let array_obj = []
@@ -168,15 +209,29 @@ print(f'Total Negative sum:{negative_sum}')
 //   }
 // }
 
-
+-----------------------------------------------------------------QUESTION5-----------------------------------------------------------------------------------------
 
 // # Q4 — Negative Data Cleaner
 // # Take 10 numbers:
 // # Count negative numbers
 // # Sum negative numbers
 // # Ignore positives completely
+# list = []
+# positive_sum = 0
+# positive_count = 0
+-----------------------------------------------------------------------------Using python-------------------------------------------------------------------------
+# for num in range(10):
+#     if num > 0:
+#         list.append(num)
+#         positive_sum + num
+#         positive_count +=1
 
+#     else:
+#         continue
 
+# print(f'List of +v number:{list}')
+# print(f'Positive Count:{positive_count}\n positive Sum:{positive_sum}')
+---------------------------------------------------------------------using js-------------------------------------------------------------------------------------
 // let negative_sum = 0
 // let negative_count = 0
 // let array_obj = []
@@ -192,9 +247,7 @@ print(f'Total Negative sum:{negative_sum}')
 //   }
 // }
 
-
-
-
+-----------------------------------------------------------------------------QUESTION6--------------------------------------------------------------------------
 # Q5 — Zero Detector System
 # Take 10 numbers:
 # Count zeros
