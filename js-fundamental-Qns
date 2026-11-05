@@ -785,52 +785,6 @@ Q40. A settings object has nested preferences. You need to update only
 preferences.theme without mutating the original. Write the update using
 nested spread syntax.
 
-============================================================= LEVEL 4 —
-NESTED OBJECTS & OBJECT METHODS
-=============================================================
-
-Q41. Create a user object containing a nested address object. Print the
-user’s city.
-
-Q42. Update only the city inside a nested address object.
-
-Q43. Safely read a deeply nested property when an intermediate property
-might be missing. Use optional chaining.
-
-Q44. Use nullish coalescing to provide a default city when city is null
-or undefined. Explain how it differs from ||.
-
-Q45. Use Object.keys() to get all property names from an object.
-
-Q46. Use Object.values() to calculate the total of numeric values in an
-object.
-
-Q47. Use Object.entries() to print each key and value.
-
-Q48. Convert an array of key-value pairs into an object using
-Object.fromEntries().
-
-Q49. Use Object.freeze() on an object. Try changing a property. Explain
-what freeze does and does not guarantee.
-
-Q50. Use Object.seal() on an object. Try adding, deleting, and changing
-properties. Explain the result.
-
-Q51. Create a function that counts the number of own enumerable
-properties in an object.
-
-Q52. Given an object of subject marks, find the subject with the highest
-marks.
-
-Q53. Given an object of monthly expenses, calculate the total expense
-and average expense.
-
-Q54. Convert an object into an array of strings formatted as “key:
-value”.
-
-Q55. Remove all properties whose values are null or undefined, returning
-a new object.
-
 ============================================================= LEVEL 5 —
 ARRAYS OF OBJECTS: INTERVIEW LOGIC
 =============================================================
@@ -905,77 +859,6 @@ Q75. Convert an object into a query-string-like format. Example: { page:
 2, limit: 10 } -> “page=2&limit=10”. State how you handle special
 characters.
 
-============================================================= LEVEL 7 —
-THIS, METHODS & OBJECT BEHAVIOR
-=============================================================
-
-Q76. Create an object with name and greet() method. Use this.name inside
-greet().
-
-Q77. Predict the output:
-
-     const user = {
-       name: "Bibek",
-       greet() {
-         console.log(this.name);
-       }
-     };
-     user.greet();
-
-Q78. What does this refer to when a method is called as object.method()?
-
-Q79. Store an object method in another variable and call it. Investigate
-what happens to this.
-
-Q80. Explain why arrow functions behave differently from regular
-functions regarding this.
-
-Q81. Create a counter object with increment(), decrement(), and reset().
-
-Q82. Create a bank account object with deposit(), withdraw(), and
-getBalance(). Reject invalid withdrawals.
-
-Q83. Create a shopping cart object with addItem(), removeItem(), and
-getTotal().
-
-Q84. Create a method that uses Object.keys(this) to count the object’s
-own enumerable properties. Discuss any caveats.
-
-Q85. Explain the difference between a regular function method and an
-arrow function used as an object property.
-
-============================================================= LEVEL 8 —
-PROTOTYPES & OBJECT MODEL
-=============================================================
-
-Q86. What is a prototype in JavaScript?
-
-Q87. Create two objects using Object.create() with a shared prototype.
-
-Q88. Explain the difference between an own property and an inherited
-property.
-
-Q89. Use Object.hasOwn() to check whether a property belongs directly to
-an object.
-
-Q90. Explain the prototype chain in your own words.
-
-Q91. Create a constructor function named Person and add a method to
-Person.prototype.
-
-Q92. Why can putting a shared method on a prototype save memory compared
-with creating a separate function in every instance?
-
-Q93. Explain the difference between Object.getPrototypeOf() and
-Object.setPrototypeOf(). Why should changing prototypes be done
-carefully?
-
-Q94. What is the difference between a constructor function and a class
-in modern JavaScript?
-
-Q95. Create a class with a static method and explain why it is called on
-the class rather than an instance.
-
 ============================================================= LEVEL 9 —
 REAL-WORLD OBJECT DESIGN
 =============================================================
@@ -1046,43 +929,6 @@ threshold.
 
 Q115. Design a market watchlist object that supports adding symbols,
 removing symbols, updating prices, and finding the biggest mover.
-
-============================================================= BONUS —
-OUTPUT PREDICTION ROUND
-=============================================================
-
-Predict every output before running the code. Explain the reason.
-
-P1. const a = { x: 1 }; const b = a; b.x = 9; console.log(a.x);
-
-P2. const a = { x: 1 }; const b = { …a }; b.x = 9; console.log(a.x);
-
-P3. const a = { nested: { x: 1 } }; const b = { …a }; b.nested.x = 9;
-console.log(a.nested.x);
-
-P4. const user = { name: “Asha” }; console.log(user.age);
-console.log(“age” in user);
-
-P5. const user = { name: “Asha”, age: 20 }; const { name, …rest } =
-user; console.log(name); console.log(rest);
-
-P6. const data = { a: 1, b: 2, c: 3 }; const { b, …other } = data;
-console.log(other);
-
-P7. const x = { score: 10 }; const y = { score: 10 }; console.log(x ==
-y); console.log(x === y);
-
-P8. const user = { name: “Bibek”, greet() { return this.name; } };
-console.log(user.greet());
-
-P9. const settings = Object.freeze({ theme: “light” }); settings.theme =
-“dark”; console.log(settings.theme);
-
-P10. const original = { items: [1, 2] }; const copy =
-structuredClone(original); copy.items.push(3);
-console.log(original.items); console.log(copy.items);
-
-
 
 
 
