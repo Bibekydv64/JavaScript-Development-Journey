@@ -209,7 +209,7 @@ print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
 //   }
 // }
 
------------------------------------------------------------------QUESTION5-----------------------------------------------------------------------------------------
+-----------------------------------------------------------------QUESTION 5-----------------------------------------------------------------------------------------
 
 // # Q4 — Negative Data Cleaner
 // # Take 10 numbers:
@@ -248,57 +248,108 @@ print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
 //   }
 // }
 
------------------------------------------------------------------------------QUESTION6--------------------------------------------------------------------------
-# Q5 — Zero Detector System
-# Take 10 numbers:
-# Count zeros
-# Count non-zero numbers
-# Sum only non-zero numbers
+-----------------------------------------------------------------------------QUESTION6 6--------------------------------------------------------------------------
+// # Q5 — Zero Detector System
+// # Take 10 numbers:
+// # Count zeros
+// # Count non-zero numbers
+// # Sum only non-zero numbers
+---------------------------------------------------------------------using js----------------------------------------------------------------------------------
+// let zero_counter = 0;
+// let non_zero_counter = 0;
+// let sum_non_counter = 0;
+
+// for(let num =1; num <= 10; num++){
+//   let user_input = Number(prompt('Enter a Number:'))
+
+//   if(user_input == 0){
+//     zero_counter +=1;
+//   };
+//   else{
+//     non_zero_counter +=1;
+//     sum_non_counter =+ num;
+//   };
+// };
+// console.log(`Zero Entered Number Counter:${zero_counter}`);
+// console.log(`Non Zero Counter:${non_zero_counter}`);
+// console.log(`Sum of non Zero Entered Number:${sum_non_counter}`);
 
 
 
+-----------------------------------------------------------------------------QUESTION6 7--------------------------------------------------------------------------
+// # Q6 — Dual Condition Filter
+// # Take 10 numbers:
+// # Count numbers > 50 AND even
+// # Count numbers > 50 AND odd
+// # Sum only numbers > 50
+---------------------------------------------------------------------using js----------------------------------------------------------------------------------
+// let LESS_THEN_fifty_counter = 0;
+// let LESS_THEN_fifty_counter_list = [];
+// let GREATER_THEN_fifty_counter = 0;
+// let GREATER_THEN_fifty_list = [];
+// let GREATER_THEN_fifty_even_list = [];
+// let GREATER_THEN_fifty_even_counter = 0;
+// let GREATER_THEN_fifty_odd_list = [];
+// let GREATER_THEN_fifty_odd_counter = 0;
+// let counter = 0;
 
-# Q6 — Dual Condition Filter
-# Take 10 numbers:
-# Count numbers > 50 AND even
-# Count numbers > 50 AND odd
-# Sum only numbers > 50
+// while (true) {
+//   let user_number = Number(prompt('Enter a Number:'));
+//   counter += 1;
+
+//   if (user_number >= 50) {
+//     GREATER_THEN_fifty_list.push(user_number);
+//     GREATER_THEN_fifty_counter += 1;
+    
+//     if (user_number % 2 == 0) {
+//       GREATER_THEN_fifty_even_list.push(user_number);
+//       GREATER_THEN_fifty_even_counter += 1;
+//     } else {
+//       GREATER_THEN_fifty_odd_list.push(user_number);
+//       GREATER_THEN_fifty_odd_counter += 1;
+//     }
+//   } else {
+//     LESS_THEN_fifty_counter += 1;
+//     LESS_THEN_fifty_counter_list.push(user_number);
+//   }
+
+//   // Break condition moved to the end so it checks after processing the 10th number
+//   if (counter >= 10) {
+//     break;
+//   }
+// }
+
+// console.log(`LESS_THEN_fifty_counter: ${LESS_THEN_fifty_counter}`);
+// console.log(`LESS_THEN_fifty_counter_list: ${LESS_THEN_fifty_counter_list}`);
+// console.log(`GREATER_THEN_fifty_counter: ${GREATER_THEN_fifty_counter}`);
+// console.log(`GREATER_THEN_fifty_list: ${GREATER_THEN_fifty_list}`);
+// console.log(`GREATER_THEN_fifty_even_list: ${GREATER_THEN_fifty_even_list}`);
+// console.log(`GREATER_THEN_fifty_even_counter: ${GREATER_THEN_fifty_even_counter}`);
+// console.log(`GREATER_THEN_fifty_odd_list: ${GREATER_THEN_fifty_odd_list}`);
+// console.log(`GREATER_THEN_fifty_odd_counter: ${GREATER_THEN_fifty_odd_counter}`);
 
 
 
+---------------------------------------------------------------------Question 8----------------------------------------------------------------------------------
+// # Q7 — Range Analyzer
+// # Take 10 numbers:
+// # Count numbers between 10 and 100
+// # Sum numbers in this range
+// # Find smallest number in range
+---------------------------------------------------------------------using js----------------------------------------------------------------------------------
+// array_obj = []
 
-# Q7 — Range Analyzer
-# Take 10 numbers:
-# Count numbers between 10 and 100
-# Sum numbers in this range
-# Find smallest number in range
-
-
-
-# Q8 — Extremes Tracker
-# Take 10 numbers:
-# Find largest number
-# Find smallest number
-# Count how many numbers are above average (basic logic: assume average = 50)
-
-
-
-# Q9 — Running Sum Break System
-# Take numbers continuously:
-# Stop when sum exceeds 200
-# Count how many numbers entered
-# Print final sum
-
-
-# Q10 — Full Classification System (Hardest)
-# Take 10 numbers:
-# Count positive even
-# Count positive odd
-# Count negative even
-# Count negative odd
-# Count zeros
-# Sum only positive numbers
-
+// for(let num =1; num <= 10; num++){
+//   let user_input = Number(prompt('Enter a number:'))
+//   if(user_input <= 10 && user_input >=100){
+//     array_obj.push(user_input)
+//   }
+//   else{
+//     continue
+//   }
+// }
+// console.log(`Your Obj:${array_obj}`)
+// console.log(`Your Obj:${Math.min.apply(null,array_obj)}`)
 
 
 
