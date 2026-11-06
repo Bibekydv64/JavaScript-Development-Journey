@@ -1,0 +1,175 @@
+JAVASCRIPT DOM MANIPULATION — LEARNING ROADMAP
+===============================================
+
+Goal:
+Learn DOM manipulation from fundamentals to advanced topics through one concept
+at a time, with reasoning questions and practical exercises.
+
+Learning rule:
+1. Study ONE concept at a time.
+2. Understand what problem the concept solves and how it works.
+3. Write a small example yourself.
+4. Answer the reasoning questions.
+5. Review mistakes before moving to the next concept.
+6. Do not memorize methods without understanding their purpose.
+
+PHASE 1 — DOM FUNDAMENTALS
+--------------------------
+1. What is the DOM (Document Object Model)?
+2. How the browser converts HTML into a DOM tree
+3. The document object
+4. getElementById()
+5. getElementsByClassName()
+6. getElementsByTagName()
+7. querySelector()
+8. querySelectorAll()
+9. Difference between HTMLCollection and NodeList
+10. Difference between live and static collections
+
+PHASE 2 — READING AND CHANGING ELEMENTS
+---------------------------------------
+11. innerHTML
+12. innerText
+13. textContent
+14. value (form inputs)
+15. getAttribute()
+16. setAttribute()
+17. hasAttribute()
+18. removeAttribute()
+19. style property
+20. classList.add()
+21. classList.remove()
+22. classList.toggle()
+23. classList.contains()
+
+PHASE 3 — CREATING AND REMOVING ELEMENTS
+----------------------------------------
+24. document.createElement()
+25. document.createTextNode()
+26. append()
+27. appendChild()
+28. prepend()
+29. before() and after()
+30. remove()
+31. replaceWith()
+32. cloneNode()
+33. Building dynamic HTML from JavaScript data
+
+PHASE 4 — DOM EVENTS
+--------------------
+34. What is an event?
+35. addEventListener()
+36. click event
+37. input event
+38. change event
+39. submit event
+40. keydown and keyup
+41. The event object
+42. event.target and event.currentTarget
+43. preventDefault()
+44. stopPropagation()
+45. Event bubbling
+46. Event capturing
+47. Event delegation
+48. Removing event listeners
+
+PHASE 5 — DOM TRAVERSAL
+-----------------------
+49. parentElement
+50. children
+51. childNodes
+52. firstElementChild and lastElementChild
+53. nextElementSibling
+54. previousElementSibling
+55. closest()
+56. matches()
+
+PHASE 6 — FORMS AND VALIDATION
+------------------------------
+57. Reading input values
+58. Handling form submission
+59. Required-field validation
+60. Checking input length and format
+61. Showing validation messages
+62. Resetting forms
+63. Preventing default form submission
+64. Safely displaying user-provided text
+
+PHASE 7 — ADVANCED DOM CONCEPTS
+-------------------------------
+65. DOMContentLoaded
+66. The difference between DOMContentLoaded and load
+67. dataset and data-* attributes
+68. DocumentFragment
+69. Creating reusable rendering functions
+70. Rendering arrays of objects into tables or cards
+71. Updating and deleting rendered records
+72. DOM performance and avoiding unnecessary updates
+73. Basic accessibility when changing the DOM
+
+PHASE 8 — PRACTICAL PROJECTS
+----------------------------
+Project 1: Todo List (beginner)
+- Add a task
+- Mark a task complete
+- Delete a task
+- Show an empty-state message
+
+Project 2: Expense Tracker (intermediate)
+- Read form inputs
+- Add transactions dynamically
+- Calculate total expenses
+- Delete transactions
+- Validate user input
+
+Project 3: Inventory Dashboard (intermediate)
+- Add products
+- Display products in a table
+- Search and filter products
+- Update stock
+- Delete products
+- Show low-stock status
+
+Project 4: Flask + JavaScript Admin Dashboard (advanced)
+- Flask serves the application and provides API routes
+- JavaScript sends requests using fetch()
+- Display database records dynamically
+- Create, read, update and delete records (CRUD)
+- Handle loading, success and error states
+- Validate data on both frontend and backend
+
+IMPORTANT SECURITY NOTE
+-----------------------
+- Use textContent for plain user-provided text.
+- Do not insert untrusted input directly with innerHTML.
+- Frontend validation improves user experience, but Flask must validate
+  submitted data again on the server.
+
+FIRST LESSON — DOM BASICS
+-------------------------
+Example HTML:
+
+<html>
+  <body>
+    <h1 id="title">Hello Bhai</h1>
+    <button>Click Me</button>
+  </body>
+</html>
+
+Concept:
+The browser parses HTML and creates a tree of objects called the DOM.
+JavaScript can select those objects, read or change their content, create
+new elements, remove elements, and respond to events.
+
+Reasoning questions:
+1. What does DOM stand for?
+2. Why does the browser create a DOM tree?
+3. Is the DOM the same thing as the original HTML file? Explain.
+4. What can JavaScript do through the DOM?
+5. If JavaScript changes an element's text, does it permanently rewrite
+   the original HTML file on your computer? Why or why not?
+
+NEXT STEP
+---------
+Start with Phase 1, Topic 1: What is the DOM?
+Do not move to selectors until you can explain the DOM in your own words.
