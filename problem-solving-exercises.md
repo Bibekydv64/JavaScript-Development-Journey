@@ -216,10 +216,11 @@ print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
 // # Count negative numbers
 // # Sum negative numbers
 // # Ignore positives completely
-# list = []
+
+-----------------------------------------------------------------------------Using python----------------------------------------------------------------------# list = []
 # positive_sum = 0
 # positive_count = 0
------------------------------------------------------------------------------Using python-------------------------------------------------------------------------
+
 # for num in range(10):
 #     if num > 0:
 #         list.append(num)
@@ -231,7 +232,7 @@ print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
 
 # print(f'List of +v number:{list}')
 # print(f'Positive Count:{positive_count}\n positive Sum:{positive_sum}')
----------------------------------------------------------------------using js-------------------------------------------------------------------------------------
+---------------------------------------------------------------------using js----------------------------------------------------------------------------------
 // let negative_sum = 0
 // let negative_count = 0
 // let array_obj = []
