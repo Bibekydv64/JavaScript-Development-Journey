@@ -395,7 +395,6 @@ print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
 # Q18
 # Detect if sequence is fully increasing.
 
-
 # Q19
 # Detect if sequence is fully decreasing.
 
@@ -403,55 +402,6 @@ print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
 # Detect zig-zag pattern.
 # Example:
 # 1 5 2 6 3 7
-
-
-# 🔥 LEVEL 3 — Positive + Trend Mix
-
-
-# Q21
-# Count:
-# positive UP trends
-# negative DOWN trends
-
-
-
-
-# Q22
-# Count:
-# negative → positive
-# transitions.
-
-
-
-# Q23
-# Count:
-# positive → negative
-# transitions.
-
-
-
-# Q24
-# Find biggest positive number.
-
-
-# Q25
-# Find smallest negative number.
-
-
-
-
-# Q26
-# Print first negative number only.
-
-
-
-
-
-
-# Q27
-# Print second positive number only.
-
-
 
 
 
