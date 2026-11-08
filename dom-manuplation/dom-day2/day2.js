@@ -1,12 +1,11 @@
 
 
-
-// let new_elements = document.createElement('div.div')
-// // new_elements.innerHTML = 'hey bibek beta'
-// // Node.append(new_elements)
-// let selector = document.querySelector('.div')
-// selector.innerHTML = 'ME box 4'
-// console.log(new_elements)
+let new_elements = document.createElement('div.div')
+new_elements.innerHTML = 'hey bibek beta'
+Node.append(new_elements)
+let selector = document.querySelector('.div')
+selector.innerHTML = 'ME box 4'
+console.log(new_elements)
 
 
 
@@ -27,13 +26,6 @@ insert_new_elements.addEventListener('click', foreach(()=>{
     child.style.backgroundColor = 'green'
     
 }))
-
- 
-
-
-
-
-
 
 parent.style.height = '400px'
 
