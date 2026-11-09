@@ -1045,27 +1045,6 @@ print(f'Positive Sum:{positive_sum}\nNegative sum:{negative_sum}')
 
 
 
-
-
-
-
-# Q2
-# 👉 Take numbers
-# 👉 Count how many times:
-# number increased from previous
-
-
-
-
-# Q3
-# 👉 Take numbers
-# 👉 Detect:
-# 2 consecutive increases
-# → print "TREND UP"
-
-
-
-
 # Q4
 
 # 👉 Take numbers
