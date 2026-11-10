@@ -1115,6 +1115,21 @@ console.log(bibek)
 
 
 
+let username = prompt('Enter a Email:');
+let password = prompt('Enter a Password:');
+
+
+if(username === 'bibek' && password === 'bibek@12')
+{
+  console.log('Welcome')
+}
+else
+{
+  console.log('nikal bete!')
+}
+
+
+
 
 
 
