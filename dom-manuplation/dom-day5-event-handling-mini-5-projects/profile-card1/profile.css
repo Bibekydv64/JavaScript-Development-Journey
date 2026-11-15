@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container{
+    height: 70vh;
+    width: 350px;
+    background-color: aliceblue;
+    border-radius: 11px;
+    background-image: url('/dom-day5-event-handling-mini-5-projects/profile-card1/img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* transition: all ease-in-out 0.3s; */
+}
+/* .container:hover{
+    scale: 1.1;
+} */
+
+.container-img-box{
+    height: 60vh;
+    width: 250px;
+    /* overflow: hidden; */
+    border-radius: 11px;
+}
+.text{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.p{
+    text-align: center;
+}
+
+.img{
+    margin-left: 5px;
+    width: 50px;
+    border-radius: 20px;
+}
+
+.child-container{
+    margin-top: 72%;
+    display:flex;
+
+}
+.child-div{
+    margin-top: 5px;
+    margin-left: 3px;
+    font-weight: bolder;
+}
+.btn{
+    border: none;
+    background-color:white;
+    height: 50px;
+    width: 120px;
+    border-radius: 11px;
+    cursor:pointer;
+    margin-left: 50px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 2px black;
+}
+
+
