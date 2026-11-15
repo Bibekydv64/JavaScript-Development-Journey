@@ -1,0 +1,281 @@
+# JavaScript DOM & Event Handling — 120 Practice Questions
+## Beginner to Advanced | Coding + Real-world Projects
+
+==================================================
+LEVEL 1: DOM SELECTION & READING (Q01–Q20)
+==================================================
+
+Q01. Select all <li> elements and print their text using a for loop.
+
+Q02. Select all paragraphs and print their text.
+
+Q03. Select an element using its ID and print its textContent.
+
+Q04. Select all buttons and count how many exist.
+
+Q05. Select all images and print their src attributes.
+
+Q06. Select all input elements and print their type.
+
+Q07. Select all elements having the class "box".
+
+Q08. Print the tagName of every child inside a div.
+
+Q09. Select all list items and print only the first item.
+
+Q10. Find the last item in a list and print its text.
+
+Q11. Count how many elements have the class "active".
+
+Q12. Select all headings (h1, h2, h3) and print their text.
+
+Q13. Find all empty paragraphs.
+
+Q14. Select all checkboxes and count checked ones.
+
+Q15. Find all buttons that are disabled.
+
+Q16. Print the text of every child inside a parent element.
+
+Q17. Select all elements with data-id attributes and print their values.
+
+Q18. Find the element containing the longest text.
+
+Q19. Find the list item containing a specific name.
+
+Q20. Find the second paragraph and change its text.
+
+==================================================
+LEVEL 2: DOM MANIPULATION (Q21–Q40)
+==================================================
+
+Q21. Change the text of a heading using textContent.
+
+Q22. Change the background color of a div.
+
+Q23. Add a new paragraph inside a container.
+
+Q24. Create a new li and append it to a ul.
+
+Q25. Remove the last li from a list.
+
+Q26. Remove all child elements from a container.
+
+Q27. Add a CSS class to an element using classList.
+
+Q28. Remove a CSS class from an element.
+
+Q29. Toggle a class when a button is clicked.
+
+Q30. Change an image src dynamically.
+
+Q31. Change the value of an input field.
+
+Q32. Create five li elements using a loop.
+
+Q33. Add a new button dynamically.
+
+Q34. Insert an element before another element.
+
+Q35. Replace an existing paragraph with a new paragraph.
+
+Q36. Add multiple CSS classes to an element.
+
+Q37. Change an element's width and height using style.
+
+Q38. Create a card containing a heading, paragraph and button.
+
+Q39. Create 10 student list items using an array.
+
+Q40. Add a delete button to every dynamically created list item.
+
+==================================================
+LEVEL 3: DOM EVENTS (Q41–Q60)
+==================================================
+
+Q41. Print a message when a button is clicked.
+
+Q42. Change a heading when a button is clicked.
+
+Q43. Increase a counter when a button is clicked.
+
+Q44. Decrease a counter when a button is clicked.
+
+Q45. Reset a counter to zero.
+
+Q46. Change the background color using a button.
+
+Q47. Show an alert when a button is clicked.
+
+Q48. Display input text inside a paragraph while typing.
+
+Q49. Count the number of characters entered into an input.
+
+Q50. Show a message when an input field is empty.
+
+Q51. Hide an element when a button is clicked.
+
+Q52. Show a hidden element when a button is clicked.
+
+Q53. Toggle between Show and Hide button text.
+
+Q54. Change an image when the mouse enters it.
+
+Q55. Restore the original image when the mouse leaves it.
+
+Q56. Submit a form and prevent the page reload.
+
+Q57. Display a form's name and email after submission.
+
+Q58. Display a message when a checkbox is selected.
+
+Q59. Change a paragraph when a dropdown option changes.
+
+Q60. Use event delegation to delete dynamically created list items.
+
+==================================================
+LEVEL 4: JAVASCRIPT LOGIC + DOM (Q61–Q80)
+==================================================
+
+Q61. Create a counter that cannot go below zero.
+
+Q62. Create a counter that cannot exceed 100.
+
+Q63. Build a character counter with a maximum limit of 50.
+
+Q64. Create a password show/hide feature.
+
+Q65. Validate whether an email input is empty.
+
+Q66. Validate a password with at least 8 characters.
+
+Q67. Display different messages based on marks entered.
+
+Q68. Create a dynamic list from an array of names.
+
+Q69. Search for a name in a student list.
+
+Q70. Filter students based on their passing marks.
+
+Q71. Sort student names alphabetically.
+
+Q72. Find the highest marks from a student array and display the student.
+
+Q73. Find the lowest marks from a student array.
+
+Q74. Count how many students passed and failed.
+
+Q75. Create a button to sort products by price.
+
+Q76. Filter products by category.
+
+Q77. Add a product to a cart using an Add button.
+
+Q78. Calculate the total price of products in the cart.
+
+Q79. Remove a product from the cart and update the total.
+
+Q80. Create a search box that filters list items while typing.
+
+==================================================
+LEVEL 5: REAL-WORLD UI COMPONENTS (Q81–Q100)
+==================================================
+
+Q81. Build a To-Do List with Add and Delete functionality.
+
+Q82. Add a Complete button to every task.
+
+Q83. Add a filter for All, Completed and Pending tasks.
+
+Q84. Build an Add Friend / Remove Friend interface.
+
+Q85. Create a Like button that toggles between Like and Unlike.
+
+Q86. Build a Follow / Unfollow button.
+
+Q87. Create a product card using JavaScript.
+
+Q88. Build a shopping cart with quantity increase and decrease.
+
+Q89. Create a student management table.
+
+Q90. Add a new student through a form.
+
+Q91. Delete a student from the table.
+
+Q92. Edit student information directly in the table.
+
+Q93. Search students by name.
+
+Q94. Filter students by course.
+
+Q95. Create a modal popup with Open and Close buttons.
+
+Q96. Build a tab navigation component.
+
+Q97. Create an accordion where only one section opens at a time.
+
+Q98. Build a notification system with dismiss buttons.
+
+Q99. Create a dark/light mode toggle.
+
+Q100. Build a pagination system for a list of 50 products.
+
+==================================================
+LEVEL 6: COMPLETE FRONTEND PROJECTS (Q101–Q120)
+==================================================
+
+Q101. Build a Student Management Dashboard with Add, Edit, Delete and Search.
+
+Q102. Build an Inventory Management UI with product name, price, stock and category.
+
+Q103. Build an Expense Tracker with income, expenses and remaining balance.
+
+Q104. Build a Task Management Dashboard with task status and priority.
+
+Q105. Build an E-commerce Product Dashboard with search, sorting and filtering.
+
+Q106. Build a Shopping Cart with quantity controls, subtotal and grand total.
+
+Q107. Build a Contact Management System with Add, Edit, Delete and Search.
+
+Q108. Build a Personal Finance Dashboard with transaction history and category filters.
+
+Q109. Build a Quiz Application with multiple-choice questions and score calculation.
+
+Q110. Build a Weather Dashboard UI with search, loading and error states using sample weather data initially.
+
+Q111. Build a Login and Registration UI with form validation.
+
+Q112. Build a Multi-Step Form with Next, Previous and Submit functionality.
+
+Q113. Build a Kanban Board with Todo, In Progress and Completed columns.
+
+Q114. Build a Sales Dashboard with total sales, orders and customer statistics.
+
+Q115. Build a Dynamic Table with sorting, filtering, searching and pagination.
+
+Q116. Build a Notes Application with Create, Edit, Delete and Search.
+
+Q117. Build a File Manager UI with folders, files and delete functionality.
+
+Q118. Build an Admin Dashboard with sidebar navigation and dynamic content sections.
+
+Q119. Build a Library Management UI with book availability, issue and return functionality.
+
+Q120. Build a Complete Business Management Dashboard combining students, employees, products, transactions and reports.
+
+==================================================
+PRACTICE RULES
+==================================================
+
+1. Solve one question at a time.
+2. Write code independently.
+3. Do not copy solutions.
+4. Test your code in the browser.
+5. Understand the logic behind every method.
+6. Move to the next level after understanding the previous level.
+7. For projects, plan the UI, data, events and logic before coding.
+
+FINAL GOAL:
+Become capable of building complete JavaScript frontend applications independently and connecting them with Python Flask backends.
