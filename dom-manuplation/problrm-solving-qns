@@ -76,13 +76,83 @@ for(let num of img){
 }
 
 
+Q05. Select all images and print their src attributes.
 
+
+        <!-- .img{
+            width: 200px;
+
+        }
+
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/2d/95/e5/2d95e5886fc4c65a6778b5fee94a7d59.jpg" alt="Broken img">
+    <img class="img" src="https://images.pexels.com/photos/10615067/pexels-photo-10615067.jpeg" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+    <img class="img" src="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+
+
+    let img = document.querySelectorAll('.img')
+
+
+for(let num of img){
+    console.log(`Location img:${num.getAttribute('src')}`)
+
+} -->
 
 Q06. Select all input elements and print their type.
+    <!-- <form>
+        <input class="input" type="text" placeholder="Email"> <br> <br>
+        <input class="input" type="text" placeholder="password"> <br> <br>
+        <input class="input" type="text" placeholder="age"> <br> <br>
+        <input class="input" type="text" placeholder="nothing"> <br> <br>
+        <input class="input" type="text" placeholder="cources"> <br> <br>
+        <input class="input" type="text" placeholder="comform password">
+        
+    </form>
+    let parent = document.querySelectorAll('form')
 
-Q07. Select all elements having the class "box".
+
+
+for(let num of parent){
+    console.log(num.children[0])
+} -->
 
 Q08. Print the tagName of every child inside a div.
+    <!-- <form>
+        <input class="input" type="text" placeholder="Email"> <br> <br>
+        <input class="input" type="text" placeholder="password"> <br> <br>
+        <input class="input" type="text" placeholder="age"> <br> <br>
+        <input class="input" type="text" placeholder="nothing"> <br> <br>
+        <input class="input" type="text" placeholder="cources"> <br> <br>
+        <input class="input" type="text" placeholder="comform password">
+        
+    </form>
+
+    
+let parent = document.querySelector('form')
+
+
+
+for(let num of parent.children){
+    console.log(num.tagName)
+} -->
+
+
+Q10. Find the last item in a list and print its text.
+
+
+
+let parent = document.querySelector('form');
+
+let lastChild = parent.lastElementChild;
+
+console.log(lastChild);
+console.log(lastChild.tagName);
+
+
+
 
 Q09. Select all list items and print only the first item.
 
