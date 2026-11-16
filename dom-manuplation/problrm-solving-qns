@@ -4,12 +4,58 @@
 ==================================================
 LEVEL 1: DOM SELECTION & READING (Q01–Q20)
 ==================================================
-
 Q01. Select all <li> elements and print their text using a for loop.
-
+    <!-- <ul class="loop">
+        <ol>bibek1</ol>
+        <ol>bibek2</ol>
+        <ol>bibek3</ol>
+        <ol>bibek4</ol>
+        <ol>bibek5</ol>
+    </ul> -->
+<!-- let loop = document.querySelectorAll('.loop ol')
+for(let num of loop){
+    console.log(num.textContent)
+} -->
+---------------------------------------------------------------------------------------------------------
 Q02. Select all paragraphs and print their text.
+    <!-- <div class="parent">
+        <p>biebk</p>
+        
+        <p>biebk</p>
+        
+        <p>biebk</p>
+        
+        <p>biebk</p>
+        
+        <p>biebk</p>
+        
+    </div> -->
 
-Q03. Select an element using its ID and print its textContent.
+<!-- let num = document.querySelectorAll('.parent p')
+
+
+for(let nums of num){
+    console.log(nums.textContent)
+
+} -->
+---------------------------------------------------------------------------------------------------------
+
+Q04. Select all buttons and count how many exist.
+    <!-- <div class="btn-container">
+        <button class="btn">click me1</button>
+        <button class="btn">click me2</button>
+        <button class="btn">click me3</button>
+        <button class="btn">click me4</button>
+        <button class="btn">click me5</button>
+    </div> -->
+    <!-- let btn = document.querySelectorAll('.btn-container .btn')
+let counter = 0
+for(let num of btn){
+    counter +=1
+    console.log(num.textContent)
+    
+} -->
+console.log(counter)
 
 Q04. Select all buttons and count how many exist.
 
