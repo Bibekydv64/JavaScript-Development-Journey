@@ -57,9 +57,26 @@ for(let num of btn){
 } -->
 console.log(counter)
 
-Q04. Select all buttons and count how many exist.
 
 Q05. Select all images and print their src attributes.
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/2d/95/e5/2d95e5886fc4c65a6778b5fee94a7d59.jpg" alt="Broken img">
+    <img class="img" src="https://images.pexels.com/photos/10615067/pexels-photo-10615067.jpeg" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+    <img class="img" src="https://media.istockphoto.com/id/1322277517/photo/wild-grass-in-the-mountains-at-sunset.jpg?s=612x612&w=0&k=20&c=6mItwwFFGqKNKEAzv0mv6TaxhLN3zSE43bWmFN--J5w=" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+    <img class="img" src="https://i.pinimg.com/736x/60/a6/e2/60a6e2b0776d1d6735fce5ae7dc9b175.jpg" alt="Broken img">
+
+let img = document.querySelectorAll('.img')
+
+
+for(let num of img){
+    console.log(`Location img:${num.getAttribute('src')}`)
+
+}
+
+
+
 
 Q06. Select all input elements and print their type.
 
