@@ -37,8 +37,60 @@
 # Exercises:
 
 # 1. Basic Counter — Increase the number by clicking a button.
-# 2. Decrease Counter — Decrease the number by one.
-# 3. Reset Counter — Return the number to zero.
+------------------------------------------------------Question1-----------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="another-container">
+           <h1 style="color: whitesmoke;">WELCOME TO THIS EXERCISES</h1>
+           <p class="display">1</p>
+           
+           <div class="btn-container">
+            <button class="btn btn1" type="button">Increment</button>
+            <button class="btn btn2" type="button">Reset</button>
+            <button class="btn btn3" type="button">Decrement</button>
+           </div>
+
+        </div>
+    </div>
+
+    <script >let btn1 = document.querySelector('.btn1')
+let btn2 = document.querySelector('.btn2')
+let btn3 = document.querySelector('.btn3')
+let display = document.querySelector('.display')
+
+
+
+btn1.addEventListener('click',function(){
+    increment = Number(display.textContent)
+    display.textContent = increment +1
+})
+
+
+
+btn2.addEventListener('click',function(){
+    display.textContent = '0'
+})
+
+
+
+
+btn3.addEventListener('click',function(){
+    increment = Number(display.textContent)
+    display.textContent = increment -1
+})
+</script>
+</body>
+</html>
+----------------------------------------------------------------------------Question2--------------------------------------------------------------------------------------------------
 # 4. Negative Number Prevention — Do not allow the counter below zero.
 # 5. Step Counter — Increase or decrease by 5 instead of 1.
 # 6. Maximum Limit — Stop increasing after reaching 100.
