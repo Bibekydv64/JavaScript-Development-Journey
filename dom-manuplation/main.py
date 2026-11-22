@@ -237,9 +237,128 @@ btn1.addEventListener('click',btn1_event)
     </script>
 </body>
 </html>
+----------------------------------------------------------------------------------------------AnotherQN------------------------------------------------------------------------------
+
 # 5. Step Counter — Increase or decrease by 5 instead of 1.
 # 6. Maximum Limit — Stop increasing after reaching 100.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0px;
+    color: whitesmoke;
+}
+.display1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+.btn{
+    width: 120px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 15px;
+    cursor: pointer;
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="another-container">
+           <h1 style="color: whitesmoke;">WELCOME TO THIS EXERCISES</h1>
+           <p class="display">0</p>
+           <p class="display1"></p>
+           
+           <div class="btn-container">
+            <button class="btn btn1" type="button">Increment</button>
+            <button class="btn btn2" type="button">Reset</button>
+            <button class="btn btn3" type="button">Decrement</button>
+           </div>
+
+        </div>
+    </div>
+
+    <script src="index.js">
+        let display = document.querySelector('.display')
+let display1 = document.querySelector('.display1')
+let btn1 = document.querySelector('.btn1')
+let btn2 = document.querySelector('.btn2')
+let btn3 = document.querySelector('.btn3')
+// ---------------------------btn1-------------------------------
+btn1_event = function(){
+    let display_converter = Number(display.textContent)
+
+    if(display_converter < 100){
+        display.textContent =  display_converter +5
+    }
+    else{
+        alert('restart btn')
+        display.textContent = '0'
+    }
+}
+btn1.addEventListener('click',btn1_event)
+
+
+btn2.addEventListener('click',function(){
+    // if(Number(display.textContent) >= 90){
+    //     btn1.disabled = 'false'
+    // }
+    console.log(display.textContent)
+    display.textContent = '0'
+
+})
+
+
+
+
+btn3_event = function(){
+    let display_converter = Number(display.textContent)
+
+    if(display_converter > -100){
+        display.textContent =  display_converter -5
+    }
+    else{
+        alert('restart btn')
+        display.textContent = '0'
+    }
+}
+btn3.addEventListener('click',btn3_event)
+
+    </script>
+</body>
+</html>
 # DAY 02 — PASSWORD & VISIBILITY LOGIC
 
 # Main concepts:
