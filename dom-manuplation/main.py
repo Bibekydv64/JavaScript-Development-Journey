@@ -45,6 +45,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercises</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+    body{
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0px;
+    color: whitesmoke;
+}
+.display1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+.btn{
+    width: 120px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 15px;
+    cursor: pointer;
+}
+
+    </style>
+    </style>
 </head>
 <body>
     
@@ -92,6 +129,114 @@ btn3.addEventListener('click',function(){
 </html>
 ----------------------------------------------------------------------------Question2--------------------------------------------------------------------------------------------------
 # 4. Negative Number Prevention — Do not allow the counter below zero.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px 0px;
+    color: whitesmoke;
+}
+.display1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+
+.btn{
+    width: 120px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1rem;
+    margin: 15px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="another-container">
+           <h1 style="color: whitesmoke;">WELCOME TO THIS EXERCISES</h1>
+           <p class="display">1</p>
+           <p class="display1"></p>
+           
+           <div class="btn-container">
+            <button class="btn btn1" type="button">Increment</button>
+            <button class="btn btn2" type="button">Reset</button>
+            <button class="btn btn3" type="button">Decrement</button>
+           </div>
+
+        </div>
+    </div>
+
+    <script src="index.js">
+        let display = document.querySelector('.display')
+let display1 = document.querySelector('.display1')
+let btn1 = document.querySelector('.btn1')
+let btn2 = document.querySelector('.btn2')
+let btn3 = document.querySelector('.btn3')
+// --------------------btn1---------------------------------------
+let btn1_event = function(){
+    let number = Number(display.textContent)
+
+        display.textContent = number +1
+
+}
+btn1.addEventListener('click',btn1_event)
+
+//-----------------btn2---------------------------------------------
+        let btn2_event = function(){
+            display.textContent = '0'
+        
+        }
+        btn2.addEventListener('click', btn2_event)
+
+        let btn3_event = function(){
+            let number = Number(display.textContent)
+                if(number < 0){
+                    display1.textContent = 'beta 0 se niche nahi jayega'
+                    display.textContent = '0'
+                
+            }
+            else{
+                display.textContent = number - 1
+            }
+        
+        }
+
+        btn3.addEventListener('click',btn3_event)
+
+
+    </script>
+</body>
+</html>
 # 5. Step Counter — Increase or decrease by 5 instead of 1.
 # 6. Maximum Limit — Stop increasing after reaching 100.
 
